@@ -1,1329 +1,1265 @@
 <!DOCTYPE html>
-<!-- saved from url=(0132)file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC Civil Services — Complete Syllabus</title>
+    
+    <!-- Google Fonts: Instrument Serif for display, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Inter"', 'system-ui', 'sans-serif'],
+                        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        zinc: {
+                            50: '#fafafa',
+                            100: '#f4f4f5',
+                            200: '#e4e4e7',
+                            300: '#d4d4d8',
+                            400: '#a1a1aa',
+                            500: '#71717a',
+                            600: '#52525b',
+                            700: '#3f3f46',
+                            800: '#27272a',
+                            900: '#18181b',
+                        }
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.05)',
+                        'card': '0 4px 20px -2px rgba(0, 0, 0, 0.03), 0 0 3px rgba(0,0,0,0.02)',
+                        'card-hover': '0 20px 40px -10px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0,0,0,0.03)',
+                    },
+                    animation: {
+                        'blob': 'blob 10s infinite',
+                        'fade-up': 'fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UPSC Civil Services — Complete Syllabus</title>
-<script src="./UPSC Civil Services — Complete Syllabus_files/saved_resource"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="./UPSC Civil Services — Complete Syllabus_files/css2" rel="stylesheet">
-<style>
-:root {
-  --bg: #f5f1e8;
-  --bg-alt: #faf7ef;
-  --fg: #1c1917;
-  --muted: #78716c;
-  --accent: #7c2d12;
-  --accent-2: #c2410c;
-  --accent-3: #15803d;
-  --gold: #b45309;
-  --border: #e7ddc8;
-  --card: #ffffff;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--fg);
-  margin: 0;
-  overflow-x: hidden;
-}
-.font-display { font-family: 'Fraunces', serif; }
-.font-italic { font-family: 'Fraunces', serif; font-style: italic; }
+    <style>
+        :root {
+            --sticky-offset: 11.5rem;
+            --text-primary: #18181b;
+            --text-muted: #52525b;
+            --border-soft: rgba(24, 24, 27, 0.08);
+            scrollbar-color: #d4d4d8 transparent;
+            scrollbar-width: thin;
+        }
 
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: 
-    radial-gradient(at 15% 20%, rgba(180, 83, 9, 0.07) 0px, transparent 45%),
-    radial-gradient(at 85% 80%, rgba(124, 45, 18, 0.06) 0px, transparent 45%),
-    radial-gradient(at 50% 100%, rgba(21, 128, 61, 0.04) 0px, transparent 45%);
-  pointer-events: none;
-  z-index: 0;
-}
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(var(--sticky-offset) + 1rem);
+        }
+        
+        body {
+            background-color: #fafafa;
+            color: var(--text-primary);
+            overflow-x: hidden;
+            min-height: 100dvh;
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
+            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            letter-spacing: -0.01em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior-y: none;
+        }
 
-main, header, footer, nav { position: relative; z-index: 1; }
+        * {
+            box-sizing: border-box;
+        }
 
-::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 5px; }
-::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+        button, a {
+            -webkit-tap-highlight-color: transparent;
+        }
 
-.stage-tab {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-  background: var(--card);
-  border: 1px solid var(--border);
-}
-.stage-tab.active {
-  background: var(--fg);
-  color: var(--bg);
-  border-color: var(--fg);
-  transform: translateY(-2px);
-  box-shadow: 0 16px 32px -12px rgba(28, 25, 23, 0.3);
-}
-.stage-tab:not(.active):hover {
-  border-color: var(--accent-2);
-  transform: translateY(-1px);
-}
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            letter-spacing: -0.02em;
+            line-height: 1.05;
+        }
 
-.paper-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-.paper-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 0;
-  background: linear-gradient(180deg, var(--accent-2), var(--gold));
-  transition: height 0.4s ease;
-}
-.paper-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 24px 48px -20px rgba(124, 45, 18, 0.18);
-  border-color: var(--accent-2);
-}
-.paper-card:hover::after { height: 100%; }
+        p, li, span, div, button, a {
+            text-rendering: optimizeLegibility;
+        }
 
-.syllabus-bullet {
-  position: relative;
-  padding-left: 24px;
-  transition: all 0.25s ease;
-  line-height: 1.65;
-  color: #44403c;
-}
-.syllabus-bullet::before {
-  content: '';
-  position: absolute;
-  left: 4px;
-  top: 11px;
-  width: 10px;
-  height: 1.5px;
-  background: var(--accent-2);
-  transition: all 0.25s ease;
-}
-.syllabus-bullet:hover {
-  color: var(--accent);
-  padding-left: 30px;
-}
-.syllabus-bullet:hover::before {
-  width: 18px;
-  background: var(--accent);
-}
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a1a1aa; }
 
-.stage-panel { display: none; }
-.stage-panel.active {
-  display: block;
-  animation: fadeUp 0.5s ease;
-}
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+        /* Glassmorphism Utilities */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.74);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.65);
+            box-shadow: 0 10px 35px rgba(24, 24, 27, 0.08);
+        }
 
-.chakra-spin {
-  animation: spin 90s linear infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.82);
+        }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+        article,
+        .glass-card {
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
 
-.sub-title {
-  font-family: 'Fraunces', serif;
-  font-weight: 600;
-  font-style: italic;
-  color: var(--accent);
-  position: relative;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-  font-size: 1.05rem;
-}
-.sub-title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 32px;
-  height: 2px;
-  background: var(--accent-2);
-}
+        article:hover,
+        .glass-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(24, 24, 27, 0.08);
+            border-color: rgba(24, 24, 27, 0.08);
+        }
 
-.chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 3px 10px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-.chip-prelims { background: linear-gradient(135deg, #b45309, #c2410c); color: white; }
-.chip-mains { background: linear-gradient(135deg, #7c2d12, #991b1b); color: white; }
-.chip-optional { background: linear-gradient(135deg, #15803d, #166534); color: white; }
-.chip-pt { background: linear-gradient(135deg, #1c1917, #44403c); color: white; }
+        .nav-pill {
+            min-height: 42px;
+            padding: 0.65rem 1rem;
+            border: 1px solid transparent;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s ease;
+        }
 
-.title-mark {
-  background-image: linear-gradient(90deg, var(--accent-2), var(--gold));
-  background-repeat: no-repeat;
-  background-size: 100% 8px;
-  background-position: 0 88%;
-  padding: 0 6px;
-}
+        .nav-pill:hover {
+            background: rgba(244, 244, 245, 0.8);
+            color: var(--text-primary);
+            border-color: rgba(24, 24, 27, 0.06);
+        }
 
-.float-slow {
-  animation: float 8s ease-in-out infinite;
-}
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
+        /* Bullet Points Aesthetic */
+        .aesthetic-bullet {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.65;
+            color: #3f3f46;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            font-size: 0.95rem;
+        }
+        .aesthetic-bullet::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #d4d4d8;
+            transition: all 0.3s ease;
+        }
+        .aesthetic-bullet:hover::before {
+            background: #18181b;
+            transform: scale(1.2);
+        }
+        .aesthetic-bullet:hover {
+            color: #18181b;
+        }
 
-.stage-selector {
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  background: rgba(245, 241, 232, 0.88);
-  border-bottom: 1px solid var(--border);
+        /* Panels */
+        .stage-panel { 
+            display: none; 
+            opacity: 0; 
+        }
+        .stage-panel.active { 
+            display: block; 
+            opacity: 1; 
+            animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; 
+        }
+
+        /* Reveal Animation classes */
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* Tab active state */
+        .tab-btn.active {
+            background-color: #18181b;
+            color: white;
+            border-color: #18181b;
+        }
+        .tab-btn.active .tab-indicator {
+            background-color: white;
+        }
+
+        .scroll-top-btn {
+            position: fixed;
+            right: 1rem;
+            bottom: 1rem;
+            z-index: 60;
+            width: 48px;
+            height: 48px;
+            border-radius: 9999px;
+            border: 1px solid rgba(24, 24, 27, 0.08);
+            background: rgba(255, 255, 255, 0.9);
+            color: #18181b;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.15rem;
+            transform: translateY(12px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.25s ease;
+            touch-action: manipulation;
+        }
+
+        .scroll-top-btn.show {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        @media (max-width: 768px) {
+            .scroll-top-btn {
+                right: 0.75rem;
+                bottom: 0.75rem;
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+    /* ---------- Android Viewing Fixes ---------- */
+
+html {
+    scroll-padding-top: calc(var(--sticky-offset) + 1.25rem);
 }
 
-.subsection-card {
-  background: linear-gradient(180deg, rgba(245, 241, 232, 0.6), rgba(245, 241, 232, 0.2));
-  border: 1px dashed var(--border);
-  border-radius: 12px;
-  padding: 18px 20px;
-  margin-top: 14px;
+.stage-panel {
+    scroll-margin-top: calc(var(--sticky-offset) + 1rem);
+    padding-top: 0.75rem;
 }
 
-.stat-num {
-  font-family: 'Fraunces', serif;
-  font-weight: 700;
-  font-feature-settings: 'tnum';
+nav {
+    top: max(0.75rem, env(safe-area-inset-top));
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 }
 
-.divider-fancy {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--muted);
-}
-.divider-fancy::before, .divider-fancy::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border), transparent);
+@media (max-width: 768px) {
+    :root {
+        --sticky-offset: 16rem;
+    }
+
+    html {
+        scroll-padding-top: calc(var(--sticky-offset) + 1.25rem);
+    }
+
+    .stage-panel {
+        scroll-margin-top: calc(var(--sticky-offset) + 1rem);
+        padding-top: 1.25rem;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        padding-top: calc(6.25rem + env(safe-area-inset-top));
+    }
+
+    .max-w-7xl,
+    .max-w-4xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 8vw, 4.25rem) !important;
+        line-height: 0.95;
+    }
+
+    .tab-btn {
+        min-height: 56px;
+    }
 }
 
-.journey-line {
-  background: repeating-linear-gradient(90deg, var(--accent-2) 0 6px, transparent 6px 12px);
-}
+        .animation-delay-2000 { animation-delay: 2s; }
+        .animation-delay-4000 { animation-delay: 4s; }
+    </style>
+    
+</head>
+<body class="selection:bg-zinc-900 selection:text-white">
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-</style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.visible{visibility:visible}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-bottom-20{bottom:-5rem}.-right-12{right:-3rem}.-right-20{right:-5rem}.-right-32{right:-8rem}.-top-12{top:-3rem}.right-0{right:0px}.top-0{top:0px}.top-\[73px\]{top:73px}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-7{margin-top:1.75rem}.mt-8{margin-top:2rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-2{height:0.5rem}.h-32{height:8rem}.h-48{height:12rem}.h-64{height:16rem}.h-\[480px\]{height:480px}.h-full{height:100%}.h-px{height:1px}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-2{width:0.5rem}.w-32{width:8rem}.w-48{width:12rem}.w-64{width:16rem}.w-\[480px\]{width:480px}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.-translate-y-12{--tw-translate-y:-3rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-12{--tw-translate-x:3rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-7{gap:1.75rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-\[\#44403c\]{--tw-border-opacity:1;border-color:rgb(68 64 60 / var(--tw-border-opacity, 1))}.border-\[\#bbf7d0\]{--tw-border-opacity:1;border-color:rgb(187 247 208 / var(--tw-border-opacity, 1))}.border-\[\#e7ddc8\]{--tw-border-opacity:1;border-color:rgb(231 221 200 / var(--tw-border-opacity, 1))}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-\[\#15803d\]{--tw-bg-opacity:1;background-color:rgb(21 128 61 / var(--tw-bg-opacity, 1))}.bg-\[\#1c1917\]{--tw-bg-opacity:1;background-color:rgb(28 25 23 / var(--tw-bg-opacity, 1))}.bg-\[\#c2410c\]{--tw-bg-opacity:1;background-color:rgb(194 65 12 / var(--tw-bg-opacity, 1))}.bg-\[\#e7ddc8\]{--tw-bg-opacity:1;background-color:rgb(231 221 200 / var(--tw-bg-opacity, 1))}.bg-\[\#f0fdf4\]{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-\[\#faf7ef\]{--tw-bg-opacity:1;background-color:rgb(250 247 239 / var(--tw-bg-opacity, 1))}.bg-\[\#fff\]{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-\[\#15803d\]{--tw-gradient-from:#15803d var(--tw-gradient-from-position);--tw-gradient-to:rgb(21 128 61 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#1c1917\]{--tw-gradient-from:#1c1917 var(--tw-gradient-from-position);--tw-gradient-to:rgb(28 25 23 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#7c2d12\]{--tw-gradient-from:#7c2d12 var(--tw-gradient-from-position);--tw-gradient-to:rgb(124 45 18 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#c2410c\]{--tw-gradient-from:#c2410c var(--tw-gradient-from-position);--tw-gradient-to:rgb(194 65 12 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#d1fae5\]{--tw-gradient-from:#d1fae5 var(--tw-gradient-from-position);--tw-gradient-to:rgb(209 250 229 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#fee2e2\]{--tw-gradient-from:#fee2e2 var(--tw-gradient-from-position);--tw-gradient-to:rgb(254 226 226 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#fef3c7\]{--tw-gradient-from:#fef3c7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(254 243 199 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-\[\#166534\]{--tw-gradient-to:#166534 var(--tw-gradient-to-position)}.to-\[\#44403c\]{--tw-gradient-to:#44403c var(--tw-gradient-to-position)}.to-\[\#b45309\]{--tw-gradient-to:#b45309 var(--tw-gradient-to-position)}.to-\[\#c2410c\]{--tw-gradient-to:#c2410c var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-12{padding-bottom:3rem}.pt-16{padding-top:4rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.text-left{text-align:left}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\[0\.95\]{line-height:0.95}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.15em\]{letter-spacing:0.15em}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-\[\#15803d\]{--tw-text-opacity:1;color:rgb(21 128 61 / var(--tw-text-opacity, 1))}.text-\[\#1c1917\]{--tw-text-opacity:1;color:rgb(28 25 23 / var(--tw-text-opacity, 1))}.text-\[\#44403c\]{--tw-text-opacity:1;color:rgb(68 64 60 / var(--tw-text-opacity, 1))}.text-\[\#78716c\]{--tw-text-opacity:1;color:rgb(120 113 108 / var(--tw-text-opacity, 1))}.text-\[\#7c2d12\]{--tw-text-opacity:1;color:rgb(124 45 18 / var(--tw-text-opacity, 1))}.text-\[\#a8a29e\]{--tw-text-opacity:1;color:rgb(168 162 158 / var(--tw-text-opacity, 1))}.text-\[\#b45309\]{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-\[\#c2410c\]{--tw-text-opacity:1;color:rgb(194 65 12 / var(--tw-text-opacity, 1))}.text-\[\#d6d3d1\]{--tw-text-opacity:1;color:rgb(214 211 209 / var(--tw-text-opacity, 1))}.text-\[\#f5f1e8\]{--tw-text-opacity:1;color:rgb(245 241 232 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.opacity-70{opacity:0.7}.opacity-80{opacity:0.8}.opacity-90{opacity:0.9}.opacity-\[0\.12\]{opacity:0.12}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:border-\[\#c2410c\]:hover{--tw-border-opacity:1;border-color:rgb(194 65 12 / var(--tw-border-opacity, 1))}.hover\:bg-\[\#7c2d12\]:hover{--tw-bg-opacity:1;background-color:rgb(124 45 18 / var(--tw-bg-opacity, 1))}.hover\:text-\[\#7c2d12\]:hover{--tw-text-opacity:1;color:rgb(124 45 18 / var(--tw-text-opacity, 1))}.hover\:text-\[\#c2410c\]:hover{--tw-text-opacity:1;color:rgb(194 65 12 / var(--tw-text-opacity, 1))}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:block{display:block}.md\:flex{display:flex}.md\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:pt-24{padding-top:6rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style><style>
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.4; transform: scale(1.5); }
-  }
-</style></head>
-<body>
 
-<!-- HEADER -->
-<header class="sticky top-0 z-50 stage-selector">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#7c2d12] to-[#c2410c] flex items-center justify-center shadow-md">
-        <span class="font-display font-bold text-[#f5f1e8] text-lg">U</span>
-      </div>
-      <div>
-        <div class="font-display font-bold text-lg leading-none text-[#1c1917]">UPSC Syllabus</div>
-        <div class="text-[11px] text-[#78716c] tracking-wider uppercase">Civil Services Examination</div>
-      </div>
+<div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-[-10%] left-[-10%] w-[40rem] h-[40rem] bg-indigo-100 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob"></div>
+    <div class="absolute top-[20%] right-[-10%] w-[40rem] h-[40rem] bg-purple-100 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob animation-delay-2000"></div>
+    <div class="absolute -bottom-32 left-[20%] w-[40rem] h-[40rem] bg-blue-50 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob animation-delay-4000"></div>
+    <!-- Subtle grain texture overlay -->
+    <div class="absolute inset-0 opacity-[0.015]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+</div>
+
+<nav class="fixed w-full top-3 sm:top-6 z-50 flex justify-center px-3 sm:px-4">
+    <div class="glass-nav rounded-full px-2 py-2 flex items-center max-w-fit w-full sm:w-auto overflow-x-auto no-scrollbar">
+        <a href="#" class="flex items-center gap-2 pl-3 pr-5 border-r border-zinc-200/50 shrink-0">
+            <div class="w-7 h-7 bg-zinc-900 text-white rounded-full flex items-center justify-center font-serif text-sm shadow-sm">U</div>
+            <span class="font-semibold text-sm tracking-tight hidden sm:block">UPSC</span>
+        </a>
+        <div class="flex items-center gap-1.5 pl-2 sm:pl-4">
+            <a href="#overview" class="nav-pill text-sm font-medium text-zinc-600 hover:text-zinc-900 rounded-full shrink-0">Overview</a>
+            <button onclick="switchStage('prelims')" class="nav-pill text-sm font-medium text-zinc-600 hover:text-zinc-900 rounded-full shrink-0">Prelims</button>
+            <button onclick="switchStage('mains')" class="nav-pill text-sm font-medium text-zinc-600 hover:text-zinc-900 rounded-full shrink-0">Mains</button>
+            <button onclick="switchStage('pt')" class="nav-pill text-sm font-medium text-zinc-600 hover:text-zinc-900 rounded-full shrink-0">Interview</button>
+        </div>
     </div>
-    <nav class="hidden md:flex items-center gap-7 text-sm text-[#44403c]">
-      <a href="file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html#journey" class="hover:text-[#7c2d12] transition">Overview</a>
-      <a href="file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html#stages" class="hover:text-[#7c2d12] transition">Stages</a>
-      <a href="file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html#prelims-panel" onclick="switchStage(&#39;prelims&#39;)" class="hover:text-[#7c2d12] transition">Prelims</a>
-      <a href="file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html#mains-panel" onclick="switchStage(&#39;mains&#39;)" class="hover:text-[#7c2d12] transition">Mains</a>
-      <a href="file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html#pt-panel" onclick="switchStage(&#39;pt&#39;)" class="hover:text-[#7c2d12] transition">Personality Test</a>
-    </nav>
-    <a href="file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html#stages" class="text-xs md:text-sm px-4 py-2 bg-[#1c1917] text-[#f5f1e8] rounded-full hover:bg-[#7c2d12] transition font-medium">Start Reading</a>
-  </div>
-</header>
+</nav>
 
-<main>
+<main class="relative z-10 pt-28 sm:pt-32 pb-24">
 
-<!-- HERO -->
-<section class="relative pt-16 md:pt-24 pb-12 overflow-hidden">
-  <!-- Decorative chakra -->
-  <div class="absolute -right-32 -top-12 w-[480px] h-[480px] opacity-[0.12] pointer-events-none hidden md:block">
-    <svg viewBox="0 0 200 200" class="w-full h-full chakra-spin">
-      <circle cx="100" cy="100" r="95" fill="none" stroke="#7c2d12" stroke-width="0.8"></circle>
-      <circle cx="100" cy="100" r="78" fill="none" stroke="#7c2d12" stroke-width="0.8"></circle>
-      <circle cx="100" cy="100" r="6" fill="#7c2d12"></circle>
-      <g stroke="#7c2d12" stroke-width="0.8">
-        <!-- 24 spokes -->
-        <line x1="100" y1="10" x2="100" y2="190"></line>
-        <line x1="10" y1="100" x2="190" y2="100"></line>
-        <line x1="33" y1="33" x2="167" y2="167"></line>
-        <line x1="167" y1="33" x2="33" y2="167"></line>
-        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(15 100 100)"></line>
-        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(30 100 100)"></line>
-        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(45 100 100)"></line>
-        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(60 100 100)"></line>
-        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(75 100 100)"></line>
-        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(-15 100 100)"></line>
-        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(-30 100 100)"></line>
-        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(-45 100 100)"></line>
-        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(-60 100 100)"></line>
-        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(-75 100 100)"></line>
-      </g>
-    </svg>
-  </div>
+<section class="max-w-7xl mx-auto px-6 lg:px-8 mb-32 reveal">
+    <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-zinc-200 bg-white/70 text-xs font-semibold tracking-[0.2em] text-zinc-500 uppercase mb-8 shadow-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-zinc-900 animate-pulse"></span>
+            Union Public Service Commission
+        </div>
+        
+        <h1 class="hero-title font-serif text-5xl sm:text-6xl md:text-8xl lg:text-[7rem] leading-[0.9] text-zinc-900 mb-8 tracking-tight">
+            The Civil Services<br>
+            <span class="italic text-zinc-500">Syllabus.</span>
+        </h1>
+        
+        <p class="text-lg md:text-xl text-zinc-600 font-light max-w-2xl mx-auto leading-relaxed mb-12">
+            A meticulously structured visualization of the examination required to serve the Republic of India. Three stages, nine written papers, and one personality test.
+        </p>
 
-  <div class="max-w-7xl mx-auto px-6 relative">
-    <div class="max-w-3xl">
-      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#fff] border border-[#e7ddc8] mb-6">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#15803d] pulse-dot" style="animation: pulse 2s infinite;"></span>
-        <span class="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#44403c]">Union Public Service Commission</span>
-      </div>
-      
-      <h1 class="font-display text-5xl md:text-7xl font-black leading-[0.95] tracking-tight text-[#1c1917]">
-        The Complete<br>
-        <span class="font-italic font-normal text-[#7c2d12]">Civil Services</span><br>
-        <span class="title-mark">Syllabus</span>
-      </h1>
-      
-      <p class="mt-7 text-lg md:text-xl text-[#44403c] leading-relaxed max-w-2xl">
-        Three rigorous stages. Nine written papers. One personality test. 
-        A visualization of everything you must master to serve the Republic of India.
-      </p>
-      
-      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div class="bg-white border border-[#e7ddc8] rounded-xl p-5 hover:border-[#c2410c] transition">
-          <div class="stat-num text-3xl text-[#7c2d12]">3</div>
-          <div class="text-xs text-[#78716c] mt-1 uppercase tracking-wider">Stages</div>
+        <!-- Aesthetic Stats Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            <div class="glass-card rounded-3xl p-6 text-left shadow-card hover:shadow-card-hover transition-all duration-300">
+                <div class="text-xs font-semibold tracking-widest text-zinc-400 uppercase mb-2">Stages</div>
+                <div class="font-serif text-4xl text-zinc-900">3</div>
+            </div>
+            <div class="glass-card rounded-3xl p-6 text-left shadow-card hover:shadow-card-hover transition-all duration-300">
+                <div class="text-xs font-semibold tracking-widest text-zinc-400 uppercase mb-2">Papers</div>
+                <div class="font-serif text-4xl text-zinc-900">9</div>
+            </div>
+            <div class="glass-card rounded-3xl p-6 text-left shadow-card hover:shadow-card-hover transition-all duration-300">
+                <div class="text-xs font-semibold tracking-widest text-zinc-400 uppercase mb-2">Marks</div>
+                <div class="font-serif text-4xl text-zinc-900">2025</div>
+            </div>
+            <div class="glass-card rounded-3xl p-6 text-left shadow-card hover:shadow-card-hover transition-all duration-300">
+                <div class="text-xs font-semibold tracking-widest text-zinc-400 uppercase mb-2">Optionals</div>
+                <div class="font-serif text-4xl text-zinc-900">48</div>
+            </div>
         </div>
-        <div class="bg-white border border-[#e7ddc8] rounded-xl p-5 hover:border-[#c2410c] transition">
-          <div class="stat-num text-3xl text-[#7c2d12]">9</div>
-          <div class="text-xs text-[#78716c] mt-1 uppercase tracking-wider">Mains Papers</div>
-        </div>
-        <div class="bg-white border border-[#e7ddc8] rounded-xl p-5 hover:border-[#c2410c] transition">
-          <div class="stat-num text-3xl text-[#7c2d12]">2375</div>
-          <div class="text-xs text-[#78716c] mt-1 uppercase tracking-wider">Total Marks</div>
-        </div>
-        <div class="bg-white border border-[#e7ddc8] rounded-xl p-5 hover:border-[#c2410c] transition">
-          <div class="stat-num text-3xl text-[#7c2d12]">48</div>
-          <div class="text-xs text-[#78716c] mt-1 uppercase tracking-wider">Optional Subjects</div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 
-<!-- JOURNEY OVERVIEW -->
-<section id="journey" class="py-16 border-y border-[#e7ddc8] bg-[#faf7ef]">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
-      <div>
-        <div class="text-xs font-semibold tracking-[0.2em] uppercase text-[#c2410c] mb-3">The Journey</div>
-        <h2 class="font-display text-4xl md:text-5xl font-bold text-[#1c1917]">Three stages to the <span class="font-italic text-[#7c2d12]">IAS</span></h2>
-      </div>
-      <p class="text-sm text-[#78716c] max-w-md">A candidate must clear each stage to be eligible for the next. The final merit is based on Mains (1750) + Personality Test (275).</p>
+<section id="overview" class="max-w-7xl mx-auto px-6 lg:px-8 mb-32 reveal">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-zinc-200 pb-6 gap-6">
+        <div>
+            <h2 class="font-serif text-4xl md:text-5xl text-zinc-900">The Journey</h2>
+            <p class="text-zinc-500 mt-2 font-light tracking-wide">Clear each stage to be eligible for the next.</p>
+        </div>
+        <div class="text-right">
+            <div class="text-xs font-semibold tracking-widest text-zinc-400 uppercase mb-1">Final Merit Calculation</div>
+            <div class="font-mono text-sm text-zinc-900 bg-white px-3 py-1 rounded-lg border border-zinc-200 shadow-sm inline-block">
+                Mains(1750) + PT(275) = 2025
+            </div>
+        </div>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- Stage 1 -->
-      <div class="bg-white rounded-2xl border border-[#e7ddc8] p-7 relative overflow-hidden group hover:shadow-xl transition">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#fef3c7] to-transparent rounded-full -translate-y-12 translate-x-12"></div>
-        <div class="relative">
-          <div class="flex items-center gap-3 mb-5">
-            <span class="font-display text-5xl font-black text-[#b45309]">01</span>
-            <div class="flex-1 h-px bg-[#e7ddc8]"></div>
-            <span class="chip chip-prelims">Screening</span>
-          </div>
-          <h3 class="font-display text-2xl font-bold mb-2">Preliminary Examination</h3>
-          <p class="text-sm text-[#78716c] mb-4">Objective-type screening test. Marks not counted in final ranking.</p>
-          <div class="flex gap-4 text-sm">
-            <div><span class="font-bold text-[#7c2d12]">400</span> <span class="text-[#78716c]">marks</span></div>
-            <div><span class="font-bold text-[#7c2d12]">2</span> <span class="text-[#78716c]">papers</span></div>
-            <div><span class="font-bold text-[#7c2d12]">MCQ</span></div>
-          </div>
-        </div>
-      </div>
+    <div class="grid md:grid-cols-3 gap-6 relative">
+        <!-- Connecting Line (Desktop) -->
+        <div class="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-zinc-300 to-transparent -translate-y-1/2 z-0"></div>
 
-      <!-- Stage 2 -->
-      <div class="bg-white rounded-2xl border border-[#e7ddc8] p-7 relative overflow-hidden group hover:shadow-xl transition md:scale-105">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#fee2e2] to-transparent rounded-full -translate-y-12 translate-x-12"></div>
-        <div class="relative">
-          <div class="flex items-center gap-3 mb-5">
-            <span class="font-display text-5xl font-black text-[#7c2d12]">02</span>
-            <div class="flex-1 h-px bg-[#e7ddc8]"></div>
-            <span class="chip chip-mains">Written</span>
-          </div>
-          <h3 class="font-display text-2xl font-bold mb-2">Main Examination</h3>
-          <p class="text-sm text-[#78716c] mb-4">Descriptive written exam. Tests depth of understanding &amp; analytical ability.</p>
-          <div class="flex gap-4 text-sm">
-            <div><span class="font-bold text-[#7c2d12]">1750</span> <span class="text-[#78716c]">marks</span></div>
-            <div><span class="font-bold text-[#7c2d12]">9</span> <span class="text-[#78716c]">papers</span></div>
-            <div><span class="font-bold text-[#7c2d12]">Descriptive</span></div>
-          </div>
+        <!-- Stage 01 -->
+        <div class="bg-white rounded-[2rem] p-8 shadow-card border border-zinc-100 relative z-10 hover:-translate-y-2 transition-transform duration-500">
+            <div class="w-12 h-12 rounded-full bg-indigo-50 flex items-center justify-center font-serif text-xl text-indigo-600 mb-6">01</div>
+            <h3 class="text-xl font-bold text-zinc-900 mb-2">Preliminary</h3>
+            <p class="text-sm text-zinc-500 mb-6 leading-relaxed">Objective-type screening test. Marks are not counted in the final ranking.</p>
+            <div class="flex flex-wrap gap-2">
+                <span class="text-xs font-medium bg-zinc-50 text-zinc-600 px-3 py-1 rounded-full border border-zinc-100">400 Marks</span>
+                <span class="text-xs font-medium bg-zinc-50 text-zinc-600 px-3 py-1 rounded-full border border-zinc-100">2 Papers</span>
+            </div>
         </div>
-      </div>
 
-      <!-- Stage 3 -->
-      <div class="bg-white rounded-2xl border border-[#e7ddc8] p-7 relative overflow-hidden group hover:shadow-xl transition">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#d1fae5] to-transparent rounded-full -translate-y-12 translate-x-12"></div>
-        <div class="relative">
-          <div class="flex items-center gap-3 mb-5">
-            <span class="font-display text-5xl font-black text-[#15803d]">03</span>
-            <div class="flex-1 h-px bg-[#e7ddc8]"></div>
-            <span class="chip chip-pt">Interview</span>
-          </div>
-          <h3 class="font-display text-2xl font-bold mb-2">Personality Test</h3>
-          <p class="text-sm text-[#78716c] mb-4">Personal interview assessing suitability for civil services.</p>
-          <div class="flex gap-4 text-sm">
-            <div><span class="font-bold text-[#15803d]">275</span> <span class="text-[#78716c]">marks</span></div>
-            <div><span class="font-bold text-[#15803d]">1</span> <span class="text-[#78716c]">interview</span></div>
-            <div><span class="font-bold text-[#15803d]">Board interview</span></div>
-          </div>
+        <!-- Stage 02 -->
+        <div class="bg-white rounded-[2rem] p-8 shadow-card border border-zinc-100 relative z-10 hover:-translate-y-2 transition-transform duration-500">
+            <div class="w-12 h-12 rounded-full bg-violet-50 flex items-center justify-center font-serif text-xl text-violet-600 mb-6">02</div>
+            <h3 class="text-xl font-bold text-zinc-900 mb-2">Main Exam</h3>
+            <p class="text-sm text-zinc-500 mb-6 leading-relaxed">Descriptive written examination. Tests depth of understanding and analysis.</p>
+            <div class="flex flex-wrap gap-2">
+                <span class="text-xs font-medium bg-zinc-50 text-zinc-600 px-3 py-1 rounded-full border border-zinc-100">1750 Marks</span>
+                <span class="text-xs font-medium bg-zinc-50 text-zinc-600 px-3 py-1 rounded-full border border-zinc-100">9 Papers</span>
+            </div>
         </div>
-      </div>
+
+        <!-- Stage 03 -->
+        <div class="bg-white rounded-[2rem] p-8 shadow-card border border-zinc-100 relative z-10 hover:-translate-y-2 transition-transform duration-500">
+            <div class="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center font-serif text-xl text-emerald-600 mb-6">03</div>
+            <h3 class="text-xl font-bold text-zinc-900 mb-2">Personality Test</h3>
+            <p class="text-sm text-zinc-500 mb-6 leading-relaxed">Personal interview assessing overall suitability for a career in public service.</p>
+            <div class="flex flex-wrap gap-2">
+                <span class="text-xs font-medium bg-zinc-50 text-zinc-600 px-3 py-1 rounded-full border border-zinc-100">275 Marks</span>
+                <span class="text-xs font-medium bg-zinc-50 text-zinc-600 px-3 py-1 rounded-full border border-zinc-100">Board</span>
+            </div>
+        </div>
     </div>
-
-    <div class="mt-10 flex items-center gap-3 text-xs text-[#78716c] tracking-wider uppercase">
-      <span>Final Merit</span>
-      <div class="flex-1 journey-line h-px"></div>
-      <span class="font-display font-bold text-base text-[#7c2d12]">Mains 1750 + PT 275 = 2025</span>
-    </div>
-  </div>
 </section>
 
-<!-- STAGE SELECTOR -->
-<section id="stages" class="py-10 sticky top-[73px] z-40 stage-selector">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="flex items-center gap-3 mb-4">
-      <div class="text-xs font-semibold tracking-[0.2em] uppercase text-[#c2410c]">Explore</div>
-      <div class="flex-1 h-px bg-[#e7ddc8]"></div>
+<!-- ========================================== -->
+<!-- ========================================== -->
+<div id="prelims-panel" class="stage-panel active scroll-mt-56 max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-3xl mb-16 reveal">
+        <div class="text-xs font-semibold tracking-widest text-indigo-600 uppercase mb-3">Screening Test</div>
+        <h2 class="font-serif text-5xl md:text-6xl text-zinc-900 mb-6">Preliminary Examination</h2>
+        <p class="text-lg text-zinc-600 font-light leading-relaxed">The Preliminary Examination consists of two papers of objective type (multiple choice questions) and carries a maximum of 400 marks. This is meant to serve as a screening test only.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-      <button onclick="switchStage(&#39;prelims&#39;)" id="tab-prelims" class="stage-tab active rounded-2xl p-5 text-left">
-        <div class="flex items-start justify-between mb-3">
-          <span class="text-xs font-mono opacity-70">STAGE 01</span>
-          <span class="tab-mark w-2 h-2 rounded-full bg-[#c2410c]"></span>
-        </div>
-        <div class="font-display text-xl font-bold leading-tight">Preliminary Examination</div>
-        <div class="text-xs mt-2 opacity-70">2 Papers · 400 Marks · MCQ Format</div>
-      </button>
-      <button onclick="switchStage(&#39;mains&#39;)" id="tab-mains" class="stage-tab rounded-2xl p-5 text-left">
-        <div class="flex items-start justify-between mb-3">
-          <span class="text-xs font-mono opacity-70">STAGE 02</span>
-          <span class="tab-mark w-2 h-2 rounded-full bg-[#c2410c]"></span>
-        </div>
-        <div class="font-display text-xl font-bold leading-tight">Main Examination</div>
-        <div class="text-xs mt-2 opacity-70">9 Papers · 1750 Marks · Includes Geography Optional</div>
-      </button>
-      <button onclick="switchStage(&#39;pt&#39;)" id="tab-pt" class="stage-tab rounded-2xl p-5 text-left">
-        <div class="flex items-start justify-between mb-3">
-          <span class="text-xs font-mono opacity-70">STAGE 03</span>
-          <span class="tab-mark w-2 h-2 rounded-full bg-[#c2410c]"></span>
-        </div>
-        <div class="font-display text-xl font-bold leading-tight">Personality Test</div>
-        <div class="text-xs mt-2 opacity-70">Interview · 275 Marks · Assesses Suitability</div>
-      </button>
-    </div>
-  </div>
-</section>
 
-<!-- ============ PRELIMS PANEL ============ -->
-<div id="prelims-panel" class="stage-panel active">
-  <section class="py-12">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="mb-10 reveal">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="chip chip-prelims">Part A</span>
-          <span class="text-xs text-[#78716c] tracking-wider uppercase">Screening Test</span>
-        </div>
-        <h2 class="font-display text-4xl md:text-5xl font-bold text-[#1c1917]">Preliminary Examination</h2>
-        <p class="mt-3 text-[#44403c] max-w-3xl">The Preliminary Examination consists of two papers of objective type (multiple choice questions) and carries a maximum of 400 marks. This is meant to serve as a screening test only.</p>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-6">
+    <div class="grid lg:grid-cols-2 gap-8">
         <!-- Paper I -->
-        <article class="paper-card rounded-2xl p-7 reveal">
-          <div class="flex items-start justify-between mb-5">
-            <div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="chip chip-prelims">Paper I</span>
-                <span class="text-xs text-[#78716c]">General Studies</span>
-              </div>
-              <h3 class="font-display text-2xl font-bold">General Studies Paper I</h3>
+        <article class="bg-white rounded-[2rem] p-8 md:p-10 shadow-card border border-zinc-100 reveal">
+            <div class="flex justify-between items-start mb-8 pb-8 border-b border-zinc-100">
+                <div>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper I</span>
+                    <h3 class="font-serif text-3xl mt-4">General Studies I</h3>
+                </div>
+                <div class="text-right">
+                    <div class="font-serif text-5xl text-zinc-300">200</div>
+                    <div class="text-xs font-medium text-zinc-400 mt-1 uppercase tracking-wider">Marks · 2 Hrs</div>
+                </div>
             </div>
-            <div class="text-right">
-              <div class="font-display text-3xl font-black text-[#b45309]">200</div>
-              <div class="text-[10px] text-[#78716c] uppercase tracking-wider">marks · 2 hrs</div>
+            <div class="space-y-1">
+                <div class="aesthetic-bullet">Current events of national and international importance.</div>
+                <div class="aesthetic-bullet">History of India and Indian National Movement.</div>
+                <div class="aesthetic-bullet">Indian and World Geography — Physical, Social, Economic Geography of India and the World.</div>
+                <div class="aesthetic-bullet">Indian Polity and Governance — Constitution, Political System, Panchayati Raj, Public Policy, Rights Issues, etc.</div>
+                <div class="aesthetic-bullet">Economic and Social Development — Sustainable Development, Poverty, Inclusion, Demographics, Social Sector Initiatives, etc.</div>
+                <div class="aesthetic-bullet">General issues on Environmental ecology, Bio-diversity and Climate Change — that do not require subject specialization.</div>
+                <div class="aesthetic-bullet">General Science.</div>
             </div>
-          </div>
-          <div class="space-y-2.5 text-sm">
-            <div class="syllabus-bullet">Current events of national and international importance.</div>
-            <div class="syllabus-bullet">History of India and Indian National Movement.</div>
-            <div class="syllabus-bullet">Indian and World Geography — Physical, Social, Economic Geography of India and the World.</div>
-            <div class="syllabus-bullet">Indian Polity and Governance — Constitution, Political System, Panchayati Raj, Public Policy, Rights Issues, etc.</div>
-            <div class="syllabus-bullet">Economic and Social Development — Sustainable Development, Poverty, Inclusion, Demographics, Social Sector Initiatives, etc.</div>
-            <div class="syllabus-bullet">General issues on Environmental ecology, Bio-diversity and Climate Change — that do not require subject specialization.</div>
-            <div class="syllabus-bullet">General Science.</div>
-          </div>
         </article>
 
         <!-- Paper II -->
-        <article class="paper-card rounded-2xl p-7 reveal">
-          <div class="flex items-start justify-between mb-5">
-            <div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="chip chip-prelims">Paper II</span>
-                <span class="text-xs text-[#78716c]">CSAT</span>
-              </div>
-              <h3 class="font-display text-2xl font-bold">General Studies Paper II</h3>
+        <article class="bg-white rounded-[2rem] p-8 md:p-10 shadow-card border border-zinc-100 reveal" style="animation-delay: 100ms;">
+            <div class="flex justify-between items-start mb-8 pb-8 border-b border-zinc-100">
+                <div>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper II</span>
+                    <h3 class="font-serif text-3xl mt-4">CSAT</h3>
+                </div>
+                <div class="text-right">
+                    <div class="font-serif text-5xl text-zinc-300">200</div>
+                    <div class="text-xs font-medium text-zinc-400 mt-1 uppercase tracking-wider">Marks · 2 Hrs</div>
+                </div>
             </div>
-            <div class="text-right">
-              <div class="font-display text-3xl font-black text-[#b45309]">200</div>
-              <div class="text-[10px] text-[#78716c] uppercase tracking-wider">marks · 2 hrs</div>
+            <div class="space-y-1 mb-8">
+                <div class="aesthetic-bullet">Comprehension.</div>
+                <div class="aesthetic-bullet">Interpersonal skills including communication skills.</div>
+                <div class="aesthetic-bullet">Logical reasoning and analytical ability.</div>
+                <div class="aesthetic-bullet">Decision making and problem solving.</div>
+                <div class="aesthetic-bullet">General mental ability.</div>
+                <div class="aesthetic-bullet">Basic numeracy (numbers and their relations, orders of magnitude, etc.) (Class X level), Data interpretation (charts, graphs, tables, data sufficiency etc. — Class X level).</div>
             </div>
-          </div>
-          <div class="space-y-2.5 text-sm">
-            <div class="syllabus-bullet">Comprehension.</div>
-            <div class="syllabus-bullet">Interpersonal skills including communication skills.</div>
-            <div class="syllabus-bullet">Logical reasoning and analytical ability.</div>
-            <div class="syllabus-bullet">Decision making and problem solving.</div>
-            <div class="syllabus-bullet">General mental ability.</div>
-            <div class="syllabus-bullet">Basic numeracy (numbers and their relations, orders of magnitude, etc.) (Class X level), Data interpretation (charts, graphs, tables, data sufficiency etc. — Class X level).</div>
-          </div>
-          <div class="mt-5 pt-5 border-t border-dashed border-[#e7ddc8] space-y-2 text-xs text-[#78716c]">
-            <div class="flex gap-2"><span class="font-bold text-[#c2410c]">Note 1:</span> Paper-II is a qualifying paper with minimum qualifying marks fixed at 33%.</div>
-            <div class="flex gap-2"><span class="font-bold text-[#c2410c]">Note 2:</span> The questions will be of multiple choice, objective type.</div>
-            <div class="flex gap-2"><span class="font-bold text-[#c2410c]">Note 3:</span> It is mandatory for the candidate to appear in both the Papers for evaluation. Non-appearance in both papers will lead to disqualification.</div>
-          </div>
+            
+            <div class="bg-zinc-50 rounded-2xl p-5 border border-zinc-100 text-sm text-zinc-600 space-y-3">
+                <div class="flex gap-3"><span class="font-semibold text-zinc-900 shrink-0">Note 1:</span> Paper-II is a qualifying paper with minimum qualifying marks fixed at 33%.</div>
+                <div class="flex gap-3"><span class="font-semibold text-zinc-900 shrink-0">Note 2:</span> The questions will be of multiple choice, objective type.</div>
+                <div class="flex gap-3"><span class="font-semibold text-zinc-900 shrink-0">Note 3:</span> Mandatory to appear in both Papers for evaluation. Non-appearance in both leads to disqualification.</div>
+            </div>
         </article>
-      </div>
     </div>
-  </section>
 </div>
 
-<!-- ============ MAINS PANEL ============ -->
-<div id="mains-panel" class="stage-panel">
-  <section class="py-12">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="mb-10 reveal visible">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="chip chip-mains">Part B</span>
-          <span class="text-xs text-[#78716c] tracking-wider uppercase">Written Examination</span>
+<!-- ========================================== -->
+<!-- ========================================== -->
+<div id="mains-panel" class="stage-panel scroll-mt-56 max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-3xl mb-16 reveal">
+        <div class="text-xs font-semibold tracking-widest text-violet-600 uppercase mb-3">Written Examination</div>
+        <h2 class="font-serif text-5xl md:text-6xl text-zinc-900 mb-6">Main Examination</h2>
+        <p class="text-lg text-zinc-600 font-light leading-relaxed mb-6">The Main Examination is intended to assess the overall intellectual traits and depth of understanding of candidates rather than merely the range of their information and memory.</p>
+        <div class="bg-white border border-zinc-200 p-5 rounded-2xl shadow-sm text-sm text-zinc-600">
+            <strong class="text-zinc-900 font-semibold">Standard of questions:</strong> The nature and standard of questions in GS papers (II to V) will be such that a well-educated person will be able to answer them without specialized study. Optional subject papers (VI & VII) are broadly of honours degree level.
         </div>
-        <h2 class="font-display text-4xl md:text-5xl font-bold text-[#1c1917]">Main Examination</h2>
-        <p class="mt-3 text-[#44403c] max-w-3xl">The Main Examination is intended to assess the overall intellectual traits and depth of understanding of candidates rather than merely the range of their information and memory.</p>
-        <div class="mt-5 p-4 bg-[#fff] border border-[#e7ddc8] rounded-xl text-sm text-[#44403c]">
-          <span class="font-bold text-[#7c2d12]">Standard of questions:</span> The nature and standard of questions in General Studies papers (Paper II to V) will be such that a well-educated person will be able to answer them without any specialized study. The scope of the syllabus for optional subject papers (Paper VI and VII) is broadly of the honours degree level.
-        </div>
-      </div>
+    </div>
 
-      <!-- Qualifying Papers -->
-      <div class="mb-10 reveal visible">
-        <div class="divider-fancy mb-6">
-          <span class="text-xs font-semibold tracking-[0.2em] uppercase">Qualifying Papers</span>
+    <div class="mb-16 reveal">
+        <div class="flex items-center gap-4 mb-8">
+            <h3 class="text-xs font-bold tracking-[0.2em] uppercase text-zinc-400">Qualifying Papers</h3>
+            <div class="flex-1 h-px bg-zinc-200"></div>
         </div>
-        <div class="grid md:grid-cols-2 gap-5">
-          <article class="paper-card rounded-2xl p-6">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="chip chip-mains">Paper A</span>
-              <span class="text-xs text-[#78716c]">Indian Language</span>
-            </div>
-            <h3 class="font-display text-xl font-bold mb-3">Indian Language (Qualifying)</h3>
-            <p class="text-xs text-[#78716c] mb-4">Matriculation or equivalent standard · Qualifying nature only · Marks not counted for ranking</p>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Comprehension of given passages.</div>
-              <div class="syllabus-bullet">Précis Writing.</div>
-              <div class="syllabus-bullet">Usage and Vocabulary.</div>
-              <div class="syllabus-bullet">Short Essays.</div>
-              <div class="syllabus-bullet">Translation from English to the Indian Language and vice-versa.</div>
-            </div>
-          </article>
-          <article class="paper-card rounded-2xl p-6">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="chip chip-mains">Paper B</span>
-              <span class="text-xs text-[#78716c]">English</span>
-            </div>
-            <h3 class="font-display text-xl font-bold mb-3">English (Qualifying)</h3>
-            <p class="text-xs text-[#78716c] mb-4">Matriculation or equivalent standard · Qualifying nature only · Marks not counted for ranking</p>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Comprehension of given passages.</div>
-              <div class="syllabus-bullet">Précis Writing.</div>
-              <div class="syllabus-bullet">Usage and Vocabulary.</div>
-              <div class="syllabus-bullet">Short Essays.</div>
-            </div>
-            <div class="mt-4 pt-4 border-t border-dashed border-[#e7ddc8] text-xs text-[#78716c]">
-              <span class="font-bold text-[#c2410c]">Aim:</span> To test the candidates' ability to read and understand serious discursive prose, and to express ideas clearly and correctly in English and the Indian language concerned.
-            </div>
-          </article>
+        <div class="grid md:grid-cols-2 gap-6">
+            <article class="bg-white rounded-[2rem] p-8 shadow-card border border-zinc-100">
+                <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper A</span>
+                <h4 class="font-serif text-2xl mt-4 mb-2">Indian Language</h4>
+                <p class="text-xs font-medium text-zinc-500 mb-6">Matriculation level · Marks not counted for ranking</p>
+                <div class="space-y-1 text-sm">
+                    <div class="aesthetic-bullet">Comprehension of given passages.</div>
+                    <div class="aesthetic-bullet">Précis Writing.</div>
+                    <div class="aesthetic-bullet">Usage and Vocabulary.</div>
+                    <div class="aesthetic-bullet">Short Essays.</div>
+                    <div class="aesthetic-bullet">Translation from English to Indian Language & vice-versa.</div>
+                </div>
+            </article>
+            <article class="bg-white rounded-[2rem] p-8 shadow-card border border-zinc-100">
+                <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper B</span>
+                <h4 class="font-serif text-2xl mt-4 mb-2">English</h4>
+                <p class="text-xs font-medium text-zinc-500 mb-6">Matriculation level · Marks not counted for ranking</p>
+                <div class="space-y-1 text-sm mb-6">
+                    <div class="aesthetic-bullet">Comprehension of given passages.</div>
+                    <div class="aesthetic-bullet">Précis Writing.</div>
+                    <div class="aesthetic-bullet">Usage and Vocabulary.</div>
+                    <div class="aesthetic-bullet">Short Essays.</div>
+                </div>
+                <div class="p-4 bg-zinc-50 rounded-xl text-xs text-zinc-600 border border-zinc-100">
+                    <strong class="text-zinc-900">Aim:</strong> To test ability to read and understand serious discursive prose, and to express ideas clearly and correctly.
+                </div>
+            </article>
         </div>
-      </div>
+    </div>
 
-      <!-- Paper I: Essay -->
-      <div class="mb-10 reveal visible">
-        <div class="divider-fancy mb-6">
-          <span class="text-xs font-semibold tracking-[0.2em] uppercase">Papers Counted for Merit</span>
-        </div>
-        <article class="paper-card rounded-2xl p-7">
-          <div class="flex items-start justify-between mb-5">
+    <div class="flex items-center gap-4 mb-8 reveal">
+        <h3 class="text-xs font-bold tracking-[0.2em] uppercase text-zinc-400">Papers Counted for Merit</h3>
+        <div class="flex-1 h-px bg-zinc-200"></div>
+    </div>
+
+    <!-- Paper I: Essay -->
+    <article class="bg-white rounded-[2rem] p-8 md:p-10 shadow-card border border-zinc-100 mb-8 reveal">
+        <div class="flex justify-between items-start mb-6">
             <div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="chip chip-mains">Paper I</span>
-                <span class="text-xs text-[#78716c]">Essay</span>
-              </div>
-              <h3 class="font-display text-2xl font-bold">Essay</h3>
+                <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper I</span>
+                <h3 class="font-serif text-3xl mt-4">Essay</h3>
             </div>
             <div class="text-right">
-              <div class="font-display text-3xl font-black text-[#7c2d12]">250</div>
-              <div class="text-[10px] text-[#78716c] uppercase tracking-wider">marks</div>
+                <div class="font-serif text-4xl text-zinc-300">250</div>
+                <div class="text-[10px] font-medium text-zinc-400 mt-1 uppercase tracking-wider">Marks</div>
             </div>
-          </div>
-          <div class="text-sm text-[#44403c] leading-relaxed">
-            <div class="syllabus-bullet">Candidates may be required to write essays on multiple topics.</div>
-            <div class="syllabus-bullet">They will be expected to keep closely to the subject of the essay to arrange their ideas in orderly fashion, and to write concisely.</div>
-            <div class="syllabus-bullet">Credit will be given for effective and exact expression.</div>
-          </div>
-        </article>
-      </div>
+        </div>
+        <div class="text-sm text-zinc-700 leading-relaxed font-light space-y-2">
+            <p>Candidates may be required to write essays on multiple topics. They will be expected to keep closely to the subject of the essay to arrange their ideas in orderly fashion, and to write concisely.</p>
+            <p>Credit will be given for effective and exact expression.</p>
+        </div>
+    </article>
 
-      <!-- Paper II: GS-I -->
-      <div class="mb-10 reveal visible">
-        <article class="paper-card rounded-2xl p-7">
-          <div class="flex items-start justify-between mb-5">
+    <!-- Paper II: GS I -->
+    <article class="bg-white rounded-[2rem] p-8 md:p-10 shadow-card border border-zinc-100 mb-8 reveal">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 pb-8 border-b border-zinc-100 gap-6">
             <div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="chip chip-mains">Paper II</span>
-                <span class="text-xs text-[#78716c]">General Studies I</span>
-              </div>
-              <h3 class="font-display text-2xl font-bold">Indian Heritage &amp; Culture, History and Geography of the World and Society</h3>
+                <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper II</span>
+                <h3 class="font-serif text-3xl mt-4">General Studies I</h3>
+                <p class="text-sm text-zinc-500 mt-2">Indian Heritage & Culture, History and Geography of the World and Society</p>
             </div>
-            <div class="text-right">
-              <div class="font-display text-3xl font-black text-[#7c2d12]">250</div>
-              <div class="text-[10px] text-[#78716c] uppercase tracking-wider">marks</div>
+            <div class="text-right shrink-0">
+                <div class="font-serif text-4xl text-zinc-300">250</div>
+                <div class="text-[10px] font-medium text-zinc-400 mt-1 uppercase tracking-wider">Marks</div>
             </div>
-          </div>
+        </div>
 
-          <div class="subsection-card">
-            <div class="sub-title">Indian Culture &amp; History</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Indian culture will cover the salient aspects of Art Forms, literature and Architecture from ancient to modern times.</div>
-              <div class="syllabus-bullet">Modern Indian history from about the middle of the eighteenth century until the present — significant events, personalities, issues.</div>
-              <div class="syllabus-bullet">The Freedom Struggle — its various stages and important contributors/contributions from different parts of the country.</div>
-              <div class="syllabus-bullet">Post-independence consolidation and reorganization within the country.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">World History</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">History of the world will include events from 18th century such as industrial revolution, world wars, redrawal of national boundaries, colonization, decolonization, political philosophies like communism, capitalism, socialism etc. — their forms and effect on the society.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Society</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Salient features of Indian Society, Diversity of India.</div>
-              <div class="syllabus-bullet">Role of women and women's organizations, population and associated issues, poverty and developmental issues, urbanization, their problems and their remedies.</div>
-              <div class="syllabus-bullet">Effects of globalization on Indian society.</div>
-              <div class="syllabus-bullet">Social empowerment, communalism, regionalism &amp; secularism.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Geography</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Salient features of world's physical geography.</div>
-              <div class="syllabus-bullet">Distribution of key natural resources across the world (including South Asia and the Indian sub-continent); factors responsible for the location of primary, secondary, and tertiary sector industries in various parts of the world (including India).</div>
-              <div class="syllabus-bullet">Important Geophysical phenomena such as earthquakes, Tsunami, Volcanic activity, cyclone etc., geographical features and their location — changes in critical geographical features (including water-bodies and ice-caps) and in flora and fauna and the effects of such changes.</div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Paper III: GS-II -->
-      <div class="mb-10 reveal visible">
-        <article class="paper-card rounded-2xl p-7">
-          <div class="flex items-start justify-between mb-5">
+        <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
             <div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="chip chip-mains">Paper III</span>
-                <span class="text-xs text-[#78716c]">General Studies II</span>
-              </div>
-              <h3 class="font-display text-2xl font-bold">Governance, Constitution, Polity, Social Justice and International Relations</h3>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Indian Culture & History</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Salient aspects of Art Forms, literature and Architecture from ancient to modern times.</div>
+                    <div class="aesthetic-bullet">Modern Indian history from mid-18th century until present — significant events, personalities, issues.</div>
+                    <div class="aesthetic-bullet">The Freedom Struggle — its various stages and important contributors/contributions.</div>
+                    <div class="aesthetic-bullet">Post-independence consolidation and reorganization within the country.</div>
+                </div>
             </div>
-            <div class="text-right">
-              <div class="font-display text-3xl font-black text-[#7c2d12]">250</div>
-              <div class="text-[10px] text-[#78716c] uppercase tracking-wider">marks</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Constitution &amp; Polity</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Indian Constitution — historical underpinnings, evolution, features, amendments, significant provisions and basic structure.</div>
-              <div class="syllabus-bullet">Functions and responsibilities of the Union and the States, issues and challenges pertaining to the federal structure, devolution of powers and finances up to local levels and challenges therein.</div>
-              <div class="syllabus-bullet">Separation of powers between various organs, dispute redressal mechanisms and institutions.</div>
-              <div class="syllabus-bullet">Comparison of the Indian constitutional scheme with that of other countries.</div>
-              <div class="syllabus-bullet">Parliament and State legislatures — structure, functioning, conduct of business, powers &amp; privileges and issues arising out of these.</div>
-              <div class="syllabus-bullet">Structure, organization and functioning of the Executive and the Judiciary — Ministries and Departments of the Government; pressure groups and formal/informal associations and their role in the Polity.</div>
-              <div class="syllabus-bullet">Salient features of the Representation of People's Act.</div>
-              <div class="syllabus-bullet">Appointment to various Constitutional posts, powers, functions and responsibilities of various Constitutional Bodies.</div>
-              <div class="syllabus-bullet">Statutory, regulatory and various quasi-judicial bodies.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Social Justice &amp; Governance</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Government policies and interventions for development in various sectors and issues arising out of their design and implementation.</div>
-              <div class="syllabus-bullet">Development processes and the development industry — the role of NGOs, SHGs, various groups and associations, donors, charities, institutional and other stakeholders.</div>
-              <div class="syllabus-bullet">Welfare schemes for vulnerable sections of the population by the Centre and States and the performance of these schemes; mechanisms, laws, institutions and Bodies constituted for the protection and betterment of these vulnerable sections.</div>
-              <div class="syllabus-bullet">Issues relating to development and management of Social Sector/Services relating to Health, Education, Human Resources.</div>
-              <div class="syllabus-bullet">Issues relating to poverty and hunger.</div>
-              <div class="syllabus-bullet">Important aspects of governance, transparency and accountability, e-governance — applications, models, successes, limitations, and potential; citizens charters, transparency &amp; accountability and institutional and other measures.</div>
-              <div class="syllabus-bullet">Role of civil services in a democracy.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">International Relations</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">India and its neighborhood — relations.</div>
-              <div class="syllabus-bullet">Bilateral, regional and global groupings and agreements involving India and/or affecting India's interests.</div>
-              <div class="syllabus-bullet">Effect of policies and politics of developed and developing countries on India's interests, Indian diaspora.</div>
-              <div class="syllabus-bullet">Important International institutions, agencies and fora — their structure, mandate.</div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Paper IV: GS-III -->
-      <div class="mb-10 reveal visible">
-        <article class="paper-card rounded-2xl p-7">
-          <div class="flex items-start justify-between mb-5">
             <div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="chip chip-mains">Paper IV</span>
-                <span class="text-xs text-[#78716c]">General Studies III</span>
-              </div>
-              <h3 class="font-display text-2xl font-bold">Technology, Economic Development, Bio-diversity, Environment, Security and Disaster Management</h3>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">World History</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Events from 18th century: industrial revolution, world wars, redrawal of boundaries, colonization, decolonization.</div>
+                    <div class="aesthetic-bullet">Political philosophies like communism, capitalism, socialism etc. — their forms and effect on the society.</div>
+                </div>
             </div>
-            <div class="text-right">
-              <div class="font-display text-3xl font-black text-[#7c2d12]">250</div>
-              <div class="text-[10px] text-[#78716c] uppercase tracking-wider">marks</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Economy &amp; Agriculture</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Indian Economy and issues relating to planning, mobilization, of resources, growth, development and employment.</div>
-              <div class="syllabus-bullet">Inclusive growth and issues arising from it.</div>
-              <div class="syllabus-bullet">Government Budgeting.</div>
-              <div class="syllabus-bullet">Major crops — cropping patterns in various parts of the country, different types of irrigation and irrigation systems storage, transport and marketing of agricultural produce and issues and related constraints; e-technology in the aid of farmers.</div>
-              <div class="syllabus-bullet">Issues related to direct and indirect farm subsidies and minimum support prices; Public Distribution System — objectives, functioning, limitations, revamping; issues of buffer stocks and food security; Technology missions; economics of animal-rearing.</div>
-              <div class="syllabus-bullet">Food processing and related industries in India — scope and significance, location, upstream and downstream requirements, supply chain management.</div>
-              <div class="syllabus-bullet">Land reforms in India.</div>
-              <div class="syllabus-bullet">Effects of liberalization on the economy, changes in industrial policy and their effects on industrial growth.</div>
-              <div class="syllabus-bullet">Infrastructure: Energy, Ports, Roads, Airports, Railways etc.</div>
-              <div class="syllabus-bullet">Investment models.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Science &amp; Technology</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Science and Technology — developments and their applications and effects in everyday life.</div>
-              <div class="syllabus-bullet">Achievements of Indians in science &amp; technology; indigenization of technology and developing new technology.</div>
-              <div class="syllabus-bullet">Awareness in the fields of IT, Space, Computers, robotics, nano-technology, bio-technology and issues relating to intellectual property rights.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Environment &amp; Disaster Management</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Conservation, environmental pollution and degradation, environmental impact assessment.</div>
-              <div class="syllabus-bullet">Disaster and disaster management.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Security</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Linkages between development and spread of extremism.</div>
-              <div class="syllabus-bullet">Role of external state and non-state actors in creating challenges to internal security.</div>
-              <div class="syllabus-bullet">Challenges to internal security through communication networks, role of media and social networking sites in internal security challenges, basics of cyber security; money-laundering and its prevention.</div>
-              <div class="syllabus-bullet">Security challenges and their management in border areas — linkages of organized crime with terrorism.</div>
-              <div class="syllabus-bullet">Various Security forces and agencies and their mandate.</div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Paper V: GS-IV -->
-      <div class="mb-10 reveal visible">
-        <article class="paper-card rounded-2xl p-7">
-          <div class="flex items-start justify-between mb-5">
             <div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="chip chip-mains">Paper V</span>
-                <span class="text-xs text-[#78716c]">General Studies IV</span>
-              </div>
-              <h3 class="font-display text-2xl font-bold">Ethics, Integrity and Aptitude</h3>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Society</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Salient features of Indian Society, Diversity of India.</div>
+                    <div class="aesthetic-bullet">Role of women/organizations, population issues, poverty, urbanization, problems and remedies.</div>
+                    <div class="aesthetic-bullet">Effects of globalization on Indian society.</div>
+                    <div class="aesthetic-bullet">Social empowerment, communalism, regionalism & secularism.</div>
+                </div>
             </div>
-            <div class="text-right">
-              <div class="font-display text-3xl font-black text-[#7c2d12]">250</div>
-              <div class="text-[10px] text-[#78716c] uppercase tracking-wider">marks</div>
+            <div>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Geography</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Salient features of world's physical geography.</div>
+                    <div class="aesthetic-bullet">Distribution of key natural resources across the world; factors for location of primary, secondary, and tertiary sector industries.</div>
+                    <div class="aesthetic-bullet">Important Geophysical phenomena (earthquakes, Tsunami, Volcanic activity, cyclone etc.), geographical features and their location-changes.</div>
+                </div>
             </div>
-          </div>
-          
-          <div class="text-sm text-[#44403c] mb-4 italic">This paper will include questions to test the candidates' attitude and approach to issues relating to integrity, probity in public life and his problem solving approach to various issues and conflicts faced by him in dealing with society. Questions may utilise the case study approach to determine these aspects.</div>
+        </div>
+    </article>
 
-          <div class="subsection-card">
-            <div class="sub-title">Ethics and Human Interface</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Essence, determinants and consequences of Ethics in human actions; dimensions of ethics; ethics — in private and public relationships.</div>
-              <div class="syllabus-bullet">Human Values — lessons from the lives and teachings of great leaders, reformers and administrators; role of family, society and educational institutions in inculcating values.</div>
+    <!-- Paper III: GS II -->
+    <article class="bg-white rounded-[2rem] p-8 md:p-10 shadow-card border border-zinc-100 mb-8 reveal">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 pb-8 border-b border-zinc-100 gap-6">
+            <div>
+                <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper III</span>
+                <h3 class="font-serif text-3xl mt-4">General Studies II</h3>
+                <p class="text-sm text-zinc-500 mt-2">Governance, Constitution, Polity, Social Justice and International Relations</p>
             </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Attitude</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Content, structure, function; its influence and relation with thought and behaviour; moral and political attitudes; social influence and persuasion.</div>
+            <div class="text-right shrink-0">
+                <div class="font-serif text-4xl text-zinc-300">250</div>
+                <div class="text-[10px] font-medium text-zinc-400 mt-1 uppercase tracking-wider">Marks</div>
             </div>
-          </div>
+        </div>
 
-          <div class="subsection-card">
-            <div class="sub-title">Aptitude &amp; Foundational Values</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Aptitude and foundational values for Civil Service — integrity, impartiality and non-partisanship, objectivity, dedication to public service, empathy, tolerance and compassion towards the weaker sections.</div>
+        <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+            <div class="md:col-span-2">
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Constitution & Polity</h4>
+                <div class="text-sm space-y-1 columns-1 md:columns-2 gap-12">
+                    <div class="aesthetic-bullet break-inside-avoid">Indian Constitution — historical underpinnings, evolution, features, amendments, significant provisions and basic structure.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Functions and responsibilities of the Union and States, issues and challenges pertaining to federal structure, devolution of powers and finances up to local levels.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Separation of powers between various organs, dispute redressal mechanisms and institutions.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Comparison of the Indian constitutional scheme with that of other countries.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Parliament and State legislatures — structure, functioning, conduct of business, powers & privileges.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Structure, organization and functioning of the Executive and the Judiciary — Ministries and Departments; pressure groups and formal/informal associations.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Salient features of the Representation of People's Act.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Appointment to various Constitutional posts, powers, functions and responsibilities.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Statutory, regulatory and various quasi-judicial bodies.</div>
+                </div>
             </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Emotional Intelligence</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Emotional intelligence — concepts, and their utilities and application in administration and governance.</div>
+            <div>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Social Justice & Governance</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Government policies and interventions for development in various sectors.</div>
+                    <div class="aesthetic-bullet">Development processes and industry — role of NGOs, SHGs, donors, charities.</div>
+                    <div class="aesthetic-bullet">Welfare schemes for vulnerable sections; mechanisms, laws, institutions and Bodies constituted for their protection.</div>
+                    <div class="aesthetic-bullet">Issues relating to development and management of Social Sector/Services relating to Health, Education, HR.</div>
+                    <div class="aesthetic-bullet">Issues relating to poverty and hunger.</div>
+                    <div class="aesthetic-bullet">Governance, transparency, e-governance applications, citizens charters, institutional measures.</div>
+                    <div class="aesthetic-bullet">Role of civil services in a democracy.</div>
+                </div>
             </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Moral Thinkers &amp; Philosophers</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Contributions of moral thinkers and philosophers from India and the world.</div>
+            <div>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">International Relations</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">India and its neighborhood — relations.</div>
+                    <div class="aesthetic-bullet">Bilateral, regional and global groupings and agreements involving India and/or affecting India's interests.</div>
+                    <div class="aesthetic-bullet">Effect of policies and politics of developed and developing countries on India's interests, Indian diaspora.</div>
+                    <div class="aesthetic-bullet">Important International institutions, agencies and fora — their structure, mandate.</div>
+                </div>
             </div>
-          </div>
+        </div>
+    </article>
 
-          <div class="subsection-card">
-            <div class="sub-title">Public/Civil Service Values &amp; Ethics in Public Administration</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Status and problems; ethical concerns and dilemmas in government and private institutions; laws, rules, regulations and conscience as sources of ethical guidance; accountability and ethical governance; strengthening of ethical and moral values in governance; ethical issues in international relations and funding; corporate governance.</div>
+    <!-- Paper IV: GS III -->
+    <article class="bg-white rounded-[2rem] p-8 md:p-10 shadow-card border border-zinc-100 mb-8 reveal">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 pb-8 border-b border-zinc-100 gap-6">
+            <div>
+                <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper IV</span>
+                <h3 class="font-serif text-3xl mt-4">General Studies III</h3>
+                <p class="text-sm text-zinc-500 mt-2">Technology, Economic Development, Bio-diversity, Environment, Security and Disaster Management</p>
             </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">Probity in Governance</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Concept of public service; Philosophical basis of governance and probity; Information sharing and transparency in government, Right to Information, Codes of Ethics, Codes of Conduct, Citizen's Charters, Work culture, Quality of service delivery, Utilization of public funds, challenges of corruption.</div>
+            <div class="text-right shrink-0">
+                <div class="font-serif text-4xl text-zinc-300">250</div>
+                <div class="text-[10px] font-medium text-zinc-400 mt-1 uppercase tracking-wider">Marks</div>
             </div>
-          </div>
+        </div>
 
-          <div class="subsection-card">
-            <div class="sub-title">Case Studies</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Case Studies on above issues.</div>
+        <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+            <div class="md:col-span-2">
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Economy & Agriculture</h4>
+                <div class="text-sm space-y-1 columns-1 md:columns-2 gap-12">
+                    <div class="aesthetic-bullet break-inside-avoid">Indian Economy and issues relating to planning, mobilization, of resources, growth, development and employment.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Inclusive growth and issues arising from it.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Government Budgeting.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Major crops — cropping patterns, different types of irrigation, storage, transport and marketing of agricultural produce; e-technology for farmers.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Issues related to direct and indirect farm subsidies and minimum support prices; Public Distribution System; issues of buffer stocks and food security; Technology missions; economics of animal-rearing.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Food processing and related industries in India — scope, location, supply chain management.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Land reforms in India.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Effects of liberalization on the economy, changes in industrial policy and their effects on industrial growth.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Infrastructure: Energy, Ports, Roads, Airports, Railways etc.</div>
+                    <div class="aesthetic-bullet break-inside-avoid">Investment models.</div>
+                </div>
             </div>
-          </div>
-        </article>
-      </div>
+            <div>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Science & Environment</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Science and Technology — developments and their applications and effects in everyday life.</div>
+                    <div class="aesthetic-bullet">Achievements of Indians in science & technology; indigenization of technology and developing new technology.</div>
+                    <div class="aesthetic-bullet">Awareness in the fields of IT, Space, Computers, robotics, nano-technology, bio-technology and issues relating to intellectual property rights.</div>
+                    <div class="aesthetic-bullet">Conservation, environmental pollution and degradation, environmental impact assessment.</div>
+                    <div class="aesthetic-bullet">Disaster and disaster management.</div>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Security</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Linkages between development and spread of extremism.</div>
+                    <div class="aesthetic-bullet">Role of external state and non-state actors in creating challenges to internal security.</div>
+                    <div class="aesthetic-bullet">Challenges to internal security through communication networks, role of media and social networking sites, basics of cyber security; money-laundering and its prevention.</div>
+                    <div class="aesthetic-bullet">Security challenges and their management in border areas — linkages of organized crime with terrorism.</div>
+                    <div class="aesthetic-bullet">Various Security forces and agencies and their mandate.</div>
+                </div>
+            </div>
+        </div>
+    </article>
 
-      <!-- Geography Optional -->
-      <div class="mb-10 reveal visible">
-        <div class="divider-fancy mb-6">
-          <span class="text-xs font-semibold tracking-[0.2em] uppercase">Optional Subject · Papers VI &amp; VII</span>
+    <!-- Paper V: GS IV -->
+    <article class="bg-white rounded-[2rem] p-8 md:p-10 shadow-card border border-zinc-100 mb-16 reveal">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 pb-8 border-b border-zinc-100 gap-6">
+            <div>
+                <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper V</span>
+                <h3 class="font-serif text-3xl mt-4">General Studies IV</h3>
+                <p class="text-sm text-zinc-500 mt-2">Ethics, Integrity and Aptitude</p>
+            </div>
+            <div class="text-right shrink-0">
+                <div class="font-serif text-4xl text-zinc-300">250</div>
+                <div class="text-[10px] font-medium text-zinc-400 mt-1 uppercase tracking-wider">Marks</div>
+            </div>
         </div>
         
-        <div class="bg-gradient-to-br from-[#15803d] to-[#166534] rounded-2xl p-6 text-white mb-6 relative overflow-hidden">
-          <div class="absolute -right-12 -top-12 w-48 h-48 rounded-full border-2 border-white/20"></div>
-          <div class="absolute -right-20 -bottom-20 w-64 h-64 rounded-full border border-white/10"></div>
-          <div class="relative">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="chip" style="background: rgba(255,255,255,0.18); color: white;">Optional</span>
-              <span class="text-xs opacity-80 tracking-wider uppercase">Chosen Subject</span>
+        <div class="mb-10 text-sm text-zinc-600 bg-zinc-50 p-5 rounded-2xl border border-zinc-100 italic leading-relaxed">
+            This paper will include questions to test the candidates' attitude and approach to issues relating to integrity, probity in public life and his problem solving approach to various issues and conflicts faced by him in dealing with society. Questions may utilise the case study approach to determine these aspects.
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+            <div>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Ethics & Human Interface</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Essence, determinants and consequences of Ethics in human actions; dimensions of ethics; ethics — in private and public relationships.</div>
+                    <div class="aesthetic-bullet">Human Values — lessons from the lives and teachings of great leaders, reformers and administrators; role of family, society and educational institutions in inculcating values.</div>
+                </div>
             </div>
-            <h3 class="font-display text-3xl font-bold">Geography</h3>
-            <p class="text-sm opacity-90 mt-2 max-w-2xl">A discipline that bridges natural sciences and social sciences — exploring the physical fabric of Earth and the human patterns woven upon it. Two papers, each worth 250 marks.</p>
-          </div>
+            <div>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Attitude & Aptitude</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Content, structure, function; its influence and relation with thought and behaviour; moral and political attitudes; social influence and persuasion.</div>
+                    <div class="aesthetic-bullet">Aptitude and foundational values for Civil Service — integrity, impartiality and non-partisanship, objectivity, dedication to public service, empathy, tolerance and compassion towards the weaker sections.</div>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Emotional Intelligence & Thinkers</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Emotional intelligence — concepts, and their utilities and application in administration and governance.</div>
+                    <div class="aesthetic-bullet">Contributions of moral thinkers and philosophers from India and the world.</div>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4 border-l-2 border-zinc-900 pl-3">Probity in Governance</h4>
+                <div class="text-sm space-y-1">
+                    <div class="aesthetic-bullet">Public/Civil Service Values & Ethics: Status and problems; ethical concerns and dilemmas; laws, rules, regulations and conscience as sources of ethical guidance; accountability and ethical governance.</div>
+                    <div class="aesthetic-bullet">Concept of public service; Philosophical basis of governance and probity; Information sharing and transparency, RTI, Codes of Ethics/Conduct, Citizen's Charters, Work culture, Quality of service delivery, Utilization of public funds, challenges of corruption.</div>
+                    <div class="aesthetic-bullet font-semibold text-zinc-900 mt-2">Case Studies on above issues.</div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <div class="reveal">
+        <div class="flex items-center gap-4 mb-8">
+            <h3 class="text-xs font-bold tracking-[0.2em] uppercase text-zinc-400">Optional Subject · Papers VI & VII</h3>
+            <div class="flex-1 h-px bg-zinc-200"></div>
+        </div>
+        
+        <div class="bg-zinc-900 rounded-[2rem] p-10 md:p-12 text-white mb-8 relative overflow-hidden shadow-2xl">
+            <div class="absolute top-0 right-0 w-[30rem] h-[30rem] bg-zinc-800 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/3 opacity-50"></div>
+            <div class="relative z-10">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-2 py-1 bg-white/10 backdrop-blur-md rounded border border-white/20 text-[10px] font-bold uppercase tracking-widest">Optional</span>
+                    <span class="text-xs font-medium text-zinc-400 uppercase tracking-widest">Chosen Subject</span>
+                </div>
+                <h3 class="font-serif text-5xl md:text-6xl mb-4">Geography</h3>
+                <p class="text-lg text-zinc-400 font-light max-w-2xl leading-relaxed">
+                    A discipline that bridges natural sciences and social sciences — exploring the physical fabric of Earth and the human patterns woven upon it.
+                </p>
+            </div>
         </div>
 
         <!-- Geography Paper I -->
-        <article class="paper-card rounded-2xl p-7 mb-6">
-          <div class="flex items-start justify-between mb-5">
+        <article class="bg-white rounded-[2rem] p-8 md:p-10 shadow-card border border-zinc-100 mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 pb-8 border-b border-zinc-100 gap-6">
+                <div>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper VI</span>
+                    <h3 class="font-serif text-3xl mt-4">Principles of Geography</h3>
+                </div>
+                <div class="text-right shrink-0">
+                    <div class="font-serif text-4xl text-zinc-300">250</div>
+                    <div class="text-[10px] font-medium text-zinc-400 mt-1 uppercase tracking-wider">Marks</div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <div class="inline-block border-b border-zinc-900 pb-1 mb-6">
+                    <h4 class="text-xs font-bold tracking-[0.15em] uppercase text-zinc-900">Part A: Physical Geography</h4>
+                </div>
+                <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+                    <div>
+                        <h5 class="text-lg font-serif mb-3">1. Geomorphology</h5>
+                        <div class="text-sm space-y-1 text-zinc-600">
+                            <div class="aesthetic-bullet">Factors controlling landform development; endogenetic and exogenetic forces.</div>
+                            <div class="aesthetic-bullet">Origin and evolution of the earth's crust; Fundamentals of geomagnetism; Physical conditions of the earth's interior.</div>
+                            <div class="aesthetic-bullet">Geosynclines; Continental drift; Isostasy; Plate tectonics; Recent views on mountain building.</div>
+                            <div class="aesthetic-bullet">Volcanicity; Earthquakes and Tsunamis.</div>
+                            <div class="aesthetic-bullet">Concepts of geomorphic cycles and Landscape development; Denudation chronology; Channel morphology; Erosion surfaces; Slope development.</div>
+                            <div class="aesthetic-bullet">Applied Geomorphology; Geomorphology, economic geology and environment.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-serif mb-3">2. Climatology</h5>
+                        <div class="text-sm space-y-1 text-zinc-600">
+                            <div class="aesthetic-bullet">Temperature and pressure belts of the world; Heat budget of the earth; Atmospheric circulation; Atmospheric stability and instability.</div>
+                            <div class="aesthetic-bullet">Planetary and local winds; Monsoons and jet streams; Air masses and fronts; Temperate and tropical cyclones.</div>
+                            <div class="aesthetic-bullet">Types and distribution of precipitation; Weather and Climate.</div>
+                            <div class="aesthetic-bullet">Koppen's, Thornthwaite's and Trewartha's classification of world climate.</div>
+                            <div class="aesthetic-bullet">Hydrological cycle; Global climatic change, and role and response of man in climatic changes.</div>
+                            <div class="aesthetic-bullet">Applied climatology and Urban climate.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-serif mb-3">3. Oceanography</h5>
+                        <div class="text-sm space-y-1 text-zinc-600">
+                            <div class="aesthetic-bullet">Bottom topography of the Atlantic, Indian and Pacific Oceans.</div>
+                            <div class="aesthetic-bullet">Temperature and salinity of the oceans; Heat and salt budgets, Ocean deposits.</div>
+                            <div class="aesthetic-bullet">Waves, currents and tides; Marine resources — biotic, mineral and energy resources.</div>
+                            <div class="aesthetic-bullet">Coral reefs, coral bleaching; Sea-level changes.</div>
+                            <div class="aesthetic-bullet">Law of the sea and marine pollution.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-serif mb-3">4. Biogeography & Env. Geography</h5>
+                        <div class="text-sm space-y-1 text-zinc-600">
+                            <div class="aesthetic-bullet">Genesis of soils; Classification and distribution of soils; Soil profile; Soil erosion, degradation and conservation.</div>
+                            <div class="aesthetic-bullet">Factors influencing world distribution of plants and animals; Problems of deforestation and conservation measures.</div>
+                            <div class="aesthetic-bullet">Social forestry, agro-forestry; Wild life; Major gene pool centres.</div>
+                            <div class="aesthetic-bullet">Principle ecology; Human ecological adaptations; Influence of man on ecology and environment.</div>
+                            <div class="aesthetic-bullet">Global and regional ecological changes and imbalances; Ecosystem their management and conservation.</div>
+                            <div class="aesthetic-bullet">Environmental degradation, management and conservation; Biodiversity and sustainable development.</div>
+                            <div class="aesthetic-bullet">Environmental policy; Environmental hazards and remedial measures; Environmental education and legislation.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="chip chip-optional">Paper VI</span>
-                <span class="text-xs text-[#78716c]">Geography Optional I</span>
-              </div>
-              <h3 class="font-display text-2xl font-bold">Principles of Geography</h3>
+                <div class="inline-block border-b border-zinc-900 pb-1 mb-6">
+                    <h4 class="text-xs font-bold tracking-[0.15em] uppercase text-zinc-900">Part B: Human Geography</h4>
+                </div>
+                <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+                    <div>
+                        <h5 class="text-lg font-serif mb-3">1. Perspectives in Human Geography</h5>
+                        <div class="text-sm space-y-1 text-zinc-600">
+                            <div class="aesthetic-bullet">Areal differentiation; Regional synthesis; Dichotomy and dualism; Environmentalism.</div>
+                            <div class="aesthetic-bullet">Quantitative revolution and locational analysis; Radical, behavioural, human and welfare approaches.</div>
+                            <div class="aesthetic-bullet">Languages, religions and secularisation; Cultural regions of the world; Human development index.</div>
+                        </div>
+                        <h5 class="text-lg font-serif mb-3 mt-8">2. Economic Geography</h5>
+                        <div class="text-sm space-y-1 text-zinc-600">
+                            <div class="aesthetic-bullet">World economic development: measurement and problems; World resources and their distribution.</div>
+                            <div class="aesthetic-bullet">Energy crisis; the limits to growth; World agriculture: typology of agricultural regions; Agricultural inputs and productivity.</div>
+                            <div class="aesthetic-bullet">Food and nutrition problems; Food security; famine — causes, effects and remedies.</div>
+                            <div class="aesthetic-bullet">World industries: location patterns and problems; Patterns of world trade.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-serif mb-3">3. Population & Settlement Geography</h5>
+                        <div class="text-sm space-y-1 text-zinc-600">
+                            <div class="aesthetic-bullet">Growth and distribution of world population; Demographic attributes; Causes and consequences of migration.</div>
+                            <div class="aesthetic-bullet">Concepts of over-, under- and optimum population; Population theories, world population problems and policies.</div>
+                            <div class="aesthetic-bullet">Social well-being and quality of life; Population as social capital.</div>
+                            <div class="aesthetic-bullet">Types and patterns of rural settlements; Environmental issues in rural settlements; Hierarchy of urban settlements; Urban morphology; Concept of primate city and rank-size rule; Functional classification of towns; Sphere of urban influence; Rural-urban fringe; Satellite towns; Problems and remedies of urbanization; Sustainable development of cities.</div>
+                        </div>
+                        <h5 class="text-lg font-serif mb-3 mt-8">4. Regional Planning & Models</h5>
+                        <div class="text-sm space-y-1 text-zinc-600">
+                            <div class="aesthetic-bullet">Concept of a region; Types of regions and methods of regionalisation. Growth centres and growth poles; Regional imbalances; Regional development strategies.</div>
+                            <div class="aesthetic-bullet">Environmental issues in regional planning; Planning for sustainable development.</div>
+                            <div class="aesthetic-bullet">System analysis in Human geography; Malthusian, Marxian and demographic transition models.</div>
+                            <div class="aesthetic-bullet">Central Place theories of Christaller and Losch; Perroux and Boudeville.</div>
+                            <div class="aesthetic-bullet">Von Thunen's model of agricultural location; Weber's model of industrial location; Rostow's model of stages of growth. Heart-land and Rimland theories; Laws of international boundaries and frontiers.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text-right">
-              <div class="font-display text-3xl font-black text-[#15803d]">250</div>
-              <div class="text-[10px] text-[#78716c] uppercase tracking-wider">marks</div>
-            </div>
-          </div>
-
-          <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#15803d] mt-6 mb-3">Physical Geography</div>
-
-          <div class="subsection-card">
-            <div class="sub-title">1. Geomorphology</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Factors controlling landform development; endogenetic and exogenetic forces.</div>
-              <div class="syllabus-bullet">Origin and evolution of the earth's crust; Fundamentals of geomagnetism; Physical conditions of the earth's interior.</div>
-              <div class="syllabus-bullet">Geosynclines; Continental drift; Isostasy; Plate tectonics; Recent views on mountain building.</div>
-              <div class="syllabus-bullet">Volcanicity; Earthquakes and Tsunamis.</div>
-              <div class="syllabus-bullet">Concepts of geomorphic cycles and Landscape development; Denudation chronology; Channel morphology; Erosion surfaces; Slope development.</div>
-              <div class="syllabus-bullet">Applied Geomorphology; Geomorphology, economic geology and environment.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">2. Climatology</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Temperature and pressure belts of the world; Heat budget of the earth; Atmospheric circulation; Atmospheric stability and instability.</div>
-              <div class="syllabus-bullet">Planetary and local winds; Monsoons and jet streams; Air masses and fronts; Temperate and tropical cyclones.</div>
-              <div class="syllabus-bullet">Types and distribution of precipitation; Weather and Climate.</div>
-              <div class="syllabus-bullet">Koppen's, Thornthwaite's and Trewartha's classification of world climate.</div>
-              <div class="syllabus-bullet">Hydrological cycle; Global climatic change, and role and response of man in climatic changes.</div>
-              <div class="syllabus-bullet">Applied climatology and Urban climate.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">3. Oceanography</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Bottom topography of the Atlantic, Indian and Pacific Oceans.</div>
-              <div class="syllabus-bullet">Temperature and salinity of the oceans; Heat and salt budgets, Ocean deposits.</div>
-              <div class="syllabus-bullet">Waves, currents and tides; Marine resources — biotic, mineral and energy resources.</div>
-              <div class="syllabus-bullet">Coral reefs, coral bleaching; Sea-level changes.</div>
-              <div class="syllabus-bullet">Law of the sea and marine pollution.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">4. Biogeography</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Genesis of soils; Classification and distribution of soils; Soil profile; Soil erosion, degradation and conservation.</div>
-              <div class="syllabus-bullet">Factors influencing world distribution of plants and animals; Problems of deforestation and conservation measures.</div>
-              <div class="syllabus-bullet">Social forestry, agro-forestry; Wild life; Major gene pool centres.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">5. Environmental Geography</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Principle ecology; Human ecological adaptations; Influence of man on ecology and environment.</div>
-              <div class="syllabus-bullet">Global and regional ecological changes and imbalances; Ecosystem their management and conservation.</div>
-              <div class="syllabus-bullet">Environmental degradation, management and conservation; Biodiversity and sustainable development.</div>
-              <div class="syllabus-bullet">Environmental policy; Environmental hazards and remedial measures; Environmental education and legislation.</div>
-            </div>
-          </div>
-
-          <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#15803d] mt-8 mb-3">Human Geography</div>
-
-          <div class="subsection-card">
-            <div class="sub-title">1. Perspectives in Human Geography</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Areal differentiation; Regional synthesis; Dichotomy and dualism; Environmentalism.</div>
-              <div class="syllabus-bullet">Quantitative revolution and locational analysis; Radical, behavioural, human and welfare approaches.</div>
-              <div class="syllabus-bullet">Languages, religions and secularisation; Cultural regions of the world; Human development index.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">2. Economic Geography</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">World economic development: measurement and problems; World resources and their distribution.</div>
-              <div class="syllabus-bullet">Energy crisis; the limits to growth; World agriculture: typology of agricultural regions; Agricultural inputs and productivity.</div>
-              <div class="syllabus-bullet">Food and nutrition problems; Food security; famine — causes, effects and remedies.</div>
-              <div class="syllabus-bullet">World industries: location patterns and problems; Patterns of world trade.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">3. Population and Settlement Geography</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Growth and distribution of world population; Demographic attributes; Causes and consequences of migration.</div>
-              <div class="syllabus-bullet">Concepts of over-, under- and optimum population; Population theories, world population problems and policies.</div>
-              <div class="syllabus-bullet">Social well-being and quality of life; Population as social capital.</div>
-              <div class="syllabus-bullet">Types and patterns of rural settlements; Environmental issues in rural settlements; Hierarchy of urban settlements; Urban morphology; Concept of primate city and rank-size rule; Functional classification of towns; Sphere of urban influence; Rural-urban fringe; Satellite towns; Problems and remedies of urbanization; Sustainable development of cities.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">4. Regional Planning</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Concept of a region; Types of regions and methods of regionalisation.</div>
-              <div class="syllabus-bullet">Growth centres and growth poles; Regional imbalances; Regional development strategies.</div>
-              <div class="syllabus-bullet">Environmental issues in regional planning; Planning for sustainable development.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">5. Models, Theories and Laws in Human Geography</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">System analysis in Human geography; Malthusian, Marxian and demographic transition models.</div>
-              <div class="syllabus-bullet">Central Place theories of Christaller and Losch; Perroux and Boudeville.</div>
-              <div class="syllabus-bullet">Von Thunen's model of agricultural location; Weber's model of industrial location; Rostow's model of stages of growth.</div>
-              <div class="syllabus-bullet">Heart-land and Rimland theories; Laws of international boundaries and frontiers.</div>
-            </div>
-          </div>
         </article>
 
         <!-- Geography Paper II -->
-        <article class="paper-card rounded-2xl p-7">
-          <div class="flex items-start justify-between mb-5">
-            <div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="chip chip-optional">Paper VII</span>
-                <span class="text-xs text-[#78716c]">Geography Optional II</span>
-              </div>
-              <h3 class="font-display text-2xl font-bold">Geography of India</h3>
+        <article class="bg-white rounded-[2rem] p-8 md:p-10 shadow-card border border-zinc-100">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 pb-8 border-b border-zinc-100 gap-6">
+                <div>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 bg-zinc-50 px-2 py-1 rounded-md border border-zinc-100">Paper VII</span>
+                    <h3 class="font-serif text-3xl mt-4">Geography of India</h3>
+                </div>
+                <div class="text-right shrink-0">
+                    <div class="font-serif text-4xl text-zinc-300">250</div>
+                    <div class="text-[10px] font-medium text-zinc-400 mt-1 uppercase tracking-wider">Marks</div>
+                </div>
             </div>
-            <div class="text-right">
-              <div class="font-display text-3xl font-black text-[#15803d]">250</div>
-              <div class="text-[10px] text-[#78716c] uppercase tracking-wider">marks</div>
-            </div>
-          </div>
 
-          <div class="subsection-card">
-            <div class="sub-title">1. Physical Setting</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Space relationship of India with neighbouring countries; Structure and relief; Drainage system and watersheds.</div>
-              <div class="syllabus-bullet">Physiographic regions; Mechanism of Indian monsoons and rainfall patterns; Tropical cyclones and western disturbances; Floods and droughts; Climatic regions; Natural vegetation, Soil types and their distributions.</div>
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-10 space-y-10">
+                <div class="break-inside-avoid">
+                    <h5 class="text-lg font-serif mb-3">1. Physical Setting</h5>
+                    <div class="text-sm space-y-1 text-zinc-600">
+                        <div class="aesthetic-bullet">Space relationship of India with neighbouring countries; Structure and relief; Drainage system and watersheds.</div>
+                        <div class="aesthetic-bullet">Physiographic regions; Mechanism of Indian monsoons and rainfall patterns; Tropical cyclones and western disturbances; Floods and droughts; Climatic regions; Natural vegetation, Soil types and their distributions.</div>
+                    </div>
+                </div>
+                <div class="break-inside-avoid">
+                    <h5 class="text-lg font-serif mb-3">2. Resources</h5>
+                    <div class="text-sm space-y-1 text-zinc-600">
+                        <div class="aesthetic-bullet">Land, surface and ground water, energy, minerals, biotic and marine resources.</div>
+                        <div class="aesthetic-bullet">Forest and wild life resources and their conservation; Energy crisis.</div>
+                    </div>
+                </div>
+                <div class="break-inside-avoid">
+                    <h5 class="text-lg font-serif mb-3">3. Agriculture</h5>
+                    <div class="text-sm space-y-1 text-zinc-600">
+                        <div class="aesthetic-bullet">Infrastructure: irrigation, seeds, fertilizers, power; Institutional factors: land holdings, land tenure and land reforms.</div>
+                        <div class="aesthetic-bullet">Cropping pattern, agricultural productivity, agricultural intensity, crop combination, land capability.</div>
+                        <div class="aesthetic-bullet">Agro and social-forestry; Green revolution and its socio-economic and ecological implications; Significance of dry farming.</div>
+                        <div class="aesthetic-bullet">Livestock resources and white revolution; Aqua-culture; Sericulture, Apiculture and poultry.</div>
+                        <div class="aesthetic-bullet">Agricultural regionalisation; Agro-climatic zones; Agro-ecological regions.</div>
+                    </div>
+                </div>
+                <div class="break-inside-avoid">
+                    <h5 class="text-lg font-serif mb-3">4. Industry</h5>
+                    <div class="text-sm space-y-1 text-zinc-600">
+                        <div class="aesthetic-bullet">Evolution of industries; Locational factors of cotton, jute, textile, iron and steel, aluminium, fertiliser, paper, chemical and pharmaceutical, automobile, cottage and agro-based industries.</div>
+                        <div class="aesthetic-bullet">Industrial houses and complexes including public sector undertakings.</div>
+                        <div class="aesthetic-bullet">Industrial regionalisation; New industrial policy; Multinationals and liberalisation; Special Economic Zones; Tourism including ecotourism.</div>
+                    </div>
+                </div>
+                <div class="break-inside-avoid">
+                    <h5 class="text-lg font-serif mb-3">5. Transport, Communication & Trade</h5>
+                    <div class="text-sm space-y-1 text-zinc-600">
+                        <div class="aesthetic-bullet">Road, railway, waterway, airway and pipeline networks and their complementary roles in regional development.</div>
+                        <div class="aesthetic-bullet">Growing importance of ports on national and foreign trade; Trade balance; Trade Policy; Export processing zones.</div>
+                        <div class="aesthetic-bullet">Developments in communication and information technology and their impacts on economy and society; Indian space programme.</div>
+                    </div>
+                </div>
+                <div class="break-inside-avoid">
+                    <h5 class="text-lg font-serif mb-3">6. Cultural Setting</h5>
+                    <div class="text-sm space-y-1 text-zinc-600">
+                        <div class="aesthetic-bullet">Historical Perspective of Indian Society; Racial linguistic and ethnic diversities; religious minorities; Major tribes, tribal areas and their problems; Cultural regions.</div>
+                        <div class="aesthetic-bullet">Growth, distribution and density of population; Demographic attributes — sex-ratio, age structure, literacy rate, work-force, dependency ratio, longevity; migration (inter-regional, interregional and international) and associated problems; Population problems and policies; Health indicators.</div>
+                    </div>
+                </div>
+                <div class="break-inside-avoid">
+                    <h5 class="text-lg font-serif mb-3">7. Settlements</h5>
+                    <div class="text-sm space-y-1 text-zinc-600">
+                        <div class="aesthetic-bullet">Types, patterns and morphology of rural settlements; Urban developments; Morphology of Indian cities; Functional classification of Indian cities.</div>
+                        <div class="aesthetic-bullet">Conurbations and metropolitan regions; Urban sprawl; Slums and associated problems; Town planning; Problems of urbanisation and remedies.</div>
+                    </div>
+                </div>
+                <div class="break-inside-avoid">
+                    <h5 class="text-lg font-serif mb-3">8. Regional Development & Planning</h5>
+                    <div class="text-sm space-y-1 text-zinc-600">
+                        <div class="aesthetic-bullet">Experience of regional planning in India; Five Year Plans; Integrated rural development programmes; Panchayati Raj and decentralised planning; Command area development; Watershed management.</div>
+                        <div class="aesthetic-bullet">Planning for backward area, desert, drought-prone, hill tribal area development; Multi-level planning; Regional planning and development of island territories.</div>
+                    </div>
+                </div>
+                <div class="break-inside-avoid">
+                    <h5 class="text-lg font-serif mb-3">9. Political Aspects</h5>
+                    <div class="text-sm space-y-1 text-zinc-600">
+                        <div class="aesthetic-bullet">Geographical basis of Indian federalism; State reorganisation; Emergence of new states; Regional consciousness and inter-state issues.</div>
+                        <div class="aesthetic-bullet">International boundary of India and related issues; Cross-border terrorism; India's role in world affairs; Geopolitics of South Asia and Indian Ocean realm.</div>
+                    </div>
+                </div>
+                <div class="break-inside-avoid">
+                    <h5 class="text-lg font-serif mb-3">10. Contemporary Issues</h5>
+                    <div class="text-sm space-y-1 text-zinc-600">
+                        <div class="aesthetic-bullet">Ecological issues: Environmental hazards — landslides, earthquakes, Tsunamis, floods and droughts, epidemics; Issues related to environmental pollution; Changes in patterns of land use.</div>
+                        <div class="aesthetic-bullet">Principles of environmental impact assessment and environmental management; Population explosion and food security; Environmental degradation; Deforestation, desertification and soil erosion.</div>
+                        <div class="aesthetic-bullet">Problems of agrarian and industrial unrest; Regional disparities in economic development; Concept of sustainable growth and development; Environmental awareness; Linkage of rivers; Globalisation and Indian economy.</div>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <div class="subsection-card">
-            <div class="sub-title">2. Resources</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Land, surface and ground water, energy, minerals, biotic and marine resources.</div>
-              <div class="syllabus-bullet">Forest and wild life resources and their conservation; Energy crisis.</div>
+            <div class="mt-10 p-5 bg-zinc-50 border border-zinc-200 rounded-xl flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-zinc-900 text-white flex items-center justify-center shrink-0 text-xs font-serif italic">i</div>
+                <div class="text-sm text-zinc-600 font-light">
+                    <strong class="font-semibold text-zinc-900">Note:</strong> Candidates will be required to answer one compulsory map question pertinent to subjects covered by this paper.
+                </div>
             </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">3. Agriculture</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Infrastructure: irrigation, seeds, fertilizers, power; Institutional factors: land holdings, land tenure and land reforms.</div>
-              <div class="syllabus-bullet">Cropping pattern, agricultural productivity, agricultural intensity, crop combination, land capability.</div>
-              <div class="syllabus-bullet">Agro and social-forestry; Green revolution and its socio-economic and ecological implications; Significance of dry farming.</div>
-              <div class="syllabus-bullet">Livestock resources and white revolution; Aqua-culture; Sericulture, Apiculture and poultry.</div>
-              <div class="syllabus-bullet">Agricultural regionalisation; Agro-climatic zones; Agro-ecological regions.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">4. Industry</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Evolution of industries; Locational factors of cotton, jute, textile, iron and steel, aluminium, fertiliser, paper, chemical and pharmaceutical, automobile, cottage and agro-based industries.</div>
-              <div class="syllabus-bullet">Industrial houses and complexes including public sector undertakings.</div>
-              <div class="syllabus-bullet">Industrial regionalisation; New industrial policy; Multinationals and liberalisation; Special Economic Zones; Tourism including ecotourism.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">5. Transport, Communication and Trade</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Road, railway, waterway, airway and pipeline networks and their complementary roles in regional development.</div>
-              <div class="syllabus-bullet">Growing importance of ports on national and foreign trade; Trade balance; Trade Policy; Export processing zones.</div>
-              <div class="syllabus-bullet">Developments in communication and information technology and their impacts on economy and society; Indian space programme.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">6. Cultural Setting</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Historical Perspective of Indian Society; Racial linguistic and ethnic diversities; religious minorities; Major tribes, tribal areas and their problems; Cultural regions.</div>
-              <div class="syllabus-bullet">Growth, distribution and density of population; Demographic attributes — sex-ratio, age structure, literacy rate, work-force, dependency ratio, longevity; migration (inter-regional, interregional and international) and associated problems; Population problems and policies; Health indicators.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">7. Settlements</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Types, patterns and morphology of rural settlements; Urban developments; Morphology of Indian cities; Functional classification of Indian cities.</div>
-              <div class="syllabus-bullet">Conurbations and metropolitan regions; Urban sprawl; Slums and associated problems; Town planning; Problems of urbanisation and remedies.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">8. Regional Development and Planning</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Experience of regional planning in India; Five Year Plans; Integrated rural development programmes; Panchayati Raj and decentralised planning; Command area development; Watershed management.</div>
-              <div class="syllabus-bullet">Planning for backward area, desert, drought-prone, hill tribal area development; Multi-level planning; Regional planning and development of island territories.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">9. Political Aspects</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Geographical basis of Indian federalism; State reorganisation; Emergence of new states; Regional consciousness and inter-state issues.</div>
-              <div class="syllabus-bullet">International boundary of India and related issues; Cross-border terrorism; India's role in world affairs; Geopolitics of South Asia and Indian Ocean realm.</div>
-            </div>
-          </div>
-
-          <div class="subsection-card">
-            <div class="sub-title">10. Contemporary Issues</div>
-            <div class="text-sm space-y-2">
-              <div class="syllabus-bullet">Ecological issues: Environmental hazards — landslides, earthquakes, Tsunamis, floods and droughts, epidemics; Issues related to environmental pollution; Changes in patterns of land use.</div>
-              <div class="syllabus-bullet">Principles of environmental impact assessment and environmental management; Population explosion and food security; Environmental degradation; Deforestation, desertification and soil erosion.</div>
-              <div class="syllabus-bullet">Problems of agrarian and industrial unrest; Regional disparities in economic development; Concept of sustainable growth and development; Environmental awareness; Linkage of rivers; Globalisation and Indian economy.</div>
-            </div>
-          </div>
-
-          <div class="mt-5 p-4 bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl text-xs text-[#15803d]">
-            <span class="font-bold">Note:</span> Candidates will be required to answer one compulsory map question pertinent to subjects covered by this paper.
-          </div>
         </article>
-      </div>
     </div>
-  </section>
 </div>
 
-<!-- ============ PT PANEL ============ -->
-<div id="pt-panel" class="stage-panel">
-  <section class="py-12">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="mb-10 reveal visible">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="chip chip-pt">Stage 03</span>
-          <span class="text-xs text-[#78716c] tracking-wider uppercase">Interview</span>
-        </div>
-        <h2 class="font-display text-4xl md:text-5xl font-bold text-[#1c1917]">Personality Test</h2>
-        <p class="mt-3 text-[#44403c] max-w-3xl">The candidate will be interviewed by a Board who will have before them a record of his/her career. He/she will be asked questions on matters of general interest. The object of the interview is to assess the personal suitability of the candidate for a career in public service.</p>
-      </div>
-
-      <div class="grid lg:grid-cols-3 gap-6 mb-10">
-        <div class="paper-card rounded-2xl p-6">
-          <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#78716c] mb-2">Total Marks</div>
-          <div class="font-display text-5xl font-black text-[#1c1917]">275</div>
-          <div class="text-xs text-[#78716c] mt-2">Counted for final merit ranking</div>
-        </div>
-        <div class="paper-card rounded-2xl p-6">
-          <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#78716c] mb-2">Format</div>
-          <div class="font-display text-3xl font-black text-[#1c1917]">Board Interview</div>
-          <div class="text-xs text-[#78716c] mt-2">The supplied syllabus does not prescribe a fixed duration.</div>
-        </div>
-        <div class="paper-card rounded-2xl p-6">
-          <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#78716c] mb-2">Weight in Final</div>
-          <div class="font-display text-5xl font-black text-[#1c1917]">13.6<span class="text-2xl">%</span></div>
-          <div class="text-xs text-[#78716c] mt-2">Of the total 2025 merit marks</div>
-        </div>
-      </div>
-
-      <article class="paper-card rounded-2xl p-7 reveal mb-6 visible">
-        <h3 class="font-display text-2xl font-bold mb-4">Purpose of the Test</h3>
-        <p class="text-sm text-[#44403c] leading-relaxed mb-4">
-          The interview is a purposive conversation intended to explore the mental qualities and analytical ability of the candidate. It is not intended to be a test of either the specialised or general knowledge of the candidates, which has been already tested through their written papers.
-        </p>
-        <p class="text-sm text-[#44403c] leading-relaxed">
-          Candidates are expected to have taken an intelligent interest not only in their special subjects of academic study but also in the events which are happening around them both within and outside their own State or Country as well as in modern currents of thought and in new discoveries which should rouse the curiosity of well-educated youth.
-        </p>
-      </article>
-
-      <article class="paper-card rounded-2xl p-7 reveal visible">
-        <div class="flex items-center gap-2 mb-5">
-          <span class="chip chip-pt">Assessment</span>
-          <span class="text-xs text-[#78716c]">Qualities Evaluated</span>
-        </div>
-        <h3 class="font-display text-2xl font-bold mb-4">Qualities the Board Seeks</h3>
-        <p class="text-sm text-[#44403c] mb-6">The test is intended to judge the mental calibre of a candidate. In broad terms, this is really an assessment of not only intellectual qualities but also social traits and interest in current affairs. Some of the qualities to be judged are:</p>
-
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="flex items-start gap-3 p-4 bg-[#faf7ef] rounded-xl border border-[#e7ddc8]">
-            <div class="font-display text-2xl font-black text-[#c2410c]">01</div>
-            <div>
-              <div class="font-bold text-[#1c1917] mb-1">Mental Alertness</div>
-              <div class="text-xs text-[#78716c]">Quick perception and awareness of context</div>
-            </div>
-          </div>
-          <div class="flex items-start gap-3 p-4 bg-[#faf7ef] rounded-xl border border-[#e7ddc8]">
-            <div class="font-display text-2xl font-black text-[#c2410c]">02</div>
-            <div>
-              <div class="font-bold text-[#1c1917] mb-1">Critical Powers of Assimilation</div>
-              <div class="text-xs text-[#78716c]">Ability to absorb and integrate new information</div>
-            </div>
-          </div>
-          <div class="flex items-start gap-3 p-4 bg-[#faf7ef] rounded-xl border border-[#e7ddc8]">
-            <div class="font-display text-2xl font-black text-[#c2410c]">03</div>
-            <div>
-              <div class="font-bold text-[#1c1917] mb-1">Clear &amp; Logical Exposition</div>
-              <div class="text-xs text-[#78716c]">Precise, structured articulation of thought</div>
-            </div>
-          </div>
-          <div class="flex items-start gap-3 p-4 bg-[#faf7ef] rounded-xl border border-[#e7ddc8]">
-            <div class="font-display text-2xl font-black text-[#c2410c]">04</div>
-            <div>
-              <div class="font-bold text-[#1c1917] mb-1">Balance of Judgment</div>
-              <div class="text-xs text-[#78716c]">Weighing issues from multiple perspectives</div>
-            </div>
-          </div>
-          <div class="flex items-start gap-3 p-4 bg-[#faf7ef] rounded-xl border border-[#e7ddc8]">
-            <div class="font-display text-2xl font-black text-[#c2410c]">05</div>
-            <div>
-              <div class="font-bold text-[#1c1917] mb-1">Variety &amp; Depth of Interest</div>
-              <div class="text-xs text-[#78716c]">Intellectual curiosity beyond academics</div>
-            </div>
-          </div>
-          <div class="flex items-start gap-3 p-4 bg-[#faf7ef] rounded-xl border border-[#e7ddc8]">
-            <div class="font-display text-2xl font-black text-[#c2410c]">06</div>
-            <div>
-              <div class="font-bold text-[#1c1917] mb-1">Social Cohesion &amp; Leadership</div>
-              <div class="text-xs text-[#78716c]">Ability to unite and guide diverse groups</div>
-            </div>
-          </div>
-          <div class="flex items-start gap-3 p-4 bg-[#faf7ef] rounded-xl border border-[#e7ddc8] md:col-span-2">
-            <div class="font-display text-2xl font-black text-[#c2410c]">07</div>
-            <div>
-              <div class="font-bold text-[#1c1917] mb-1">Intellectual &amp; Moral Integrity</div>
-              <div class="text-xs text-[#78716c]">The single most critical quality — honesty in thought, probity in action, and consistency between word and deed.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-6 p-5 bg-gradient-to-br from-[#1c1917] to-[#44403c] rounded-xl text-[#f5f1e8]">
-          <div class="text-xs font-semibold tracking-[0.15em] uppercase opacity-70 mb-2">Technique of Interview</div>
-          <p class="text-sm leading-relaxed">The technique of the interview is not that of a strict cross-examination but of a natural, though directed and purposive conversation, intended to reveal mental qualities of the candidate. The Board pays attention to the candidate's awareness of the world around them, balance of judgment, and capacity for social cohesion and leadership.</p>
-        </div>
-      </article>
+<!-- ========================================== -->
+<!-- ========================================== -->
+<div id="pt-panel" class="stage-panel max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-3xl mb-16 reveal">
+        <div class="text-xs font-semibold tracking-widest text-emerald-600 uppercase mb-3">Interview</div>
+        <h2 class="font-serif text-5xl md:text-6xl text-zinc-900 mb-6">Personality Test</h2>
+        <p class="text-lg text-zinc-600 font-light leading-relaxed">The candidate will be interviewed by a Board who will have before them a record of his/her career. He/she will be asked questions on matters of general interest. The object of the interview is to assess the personal suitability of the candidate for a career in public service.</p>
     </div>
-  </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 reveal">
+        <div class="bg-white rounded-[2rem] p-8 shadow-card border border-zinc-100 text-center">
+            <div class="text-xs font-bold tracking-widest text-zinc-400 uppercase mb-4">Total Marks</div>
+            <div class="font-serif text-6xl text-zinc-900 mb-2">275</div>
+            <div class="text-xs text-zinc-500 font-light">Counted for final merit ranking</div>
+        </div>
+        <div class="bg-white rounded-[2rem] p-8 shadow-card border border-zinc-100 text-center">
+            <div class="text-xs font-bold tracking-widest text-zinc-400 uppercase mb-4">Format</div>
+            <div class="font-serif text-4xl text-zinc-900 mb-2 pt-2">Board Interview</div>
+            <div class="text-xs text-zinc-500 font-light mt-4">No fixed duration prescribed</div>
+        </div>
+        <div class="bg-white rounded-[2rem] p-8 shadow-card border border-zinc-100 text-center">
+            <div class="text-xs font-bold tracking-widest text-zinc-400 uppercase mb-4">Weight in Final</div>
+            <div class="font-serif text-6xl text-zinc-900 mb-2 flex items-baseline justify-center gap-1">13.6<span class="text-2xl text-zinc-400 font-sans">%</span></div>
+            <div class="text-xs text-zinc-500 font-light">Of the total 2025 merit marks</div>
+        </div>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-8 reveal">
+        <div class="lg:col-span-5">
+            <article class="bg-zinc-900 text-white rounded-[2rem] p-8 md:p-10 shadow-2xl h-full flex flex-col justify-center">
+                <h3 class="font-serif text-3xl mb-6">Purpose & Technique</h3>
+                <p class="text-sm text-zinc-300 leading-relaxed font-light mb-6">
+                    The interview is a purposive conversation intended to explore the mental qualities and analytical ability of the candidate. It is not intended to be a test of either the specialised or general knowledge of the candidates, which has been already tested through their written papers.
+                </p>
+                <p class="text-sm text-zinc-300 leading-relaxed font-light mb-8">
+                    Candidates are expected to have taken an intelligent interest not only in their special subjects of academic study but also in the events which are happening around them... in modern currents of thought and in new discoveries which should rouse the curiosity of well-educated youth.
+                </p>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                    <h4 class="text-xs font-bold tracking-widest uppercase text-white/50 mb-3">Technique</h4>
+                    <p class="text-sm text-zinc-200 leading-relaxed font-light">Not a strict cross-examination but a natural, though directed and purposive conversation. The Board pays attention to the candidate's awareness of the world, balance of judgment, and capacity for social cohesion and leadership.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="lg:col-span-7">
+            <article class="bg-white rounded-[2rem] p-8 md:p-10 shadow-card border border-zinc-100">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="h-px flex-1 bg-zinc-200"></div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-zinc-400">Qualities Evaluated</span>
+                    <div class="h-px flex-1 bg-zinc-200"></div>
+                </div>
+                
+                <p class="text-sm text-zinc-600 font-light mb-8 text-center max-w-lg mx-auto">This is an assessment of not only intellectual qualities but also social traits and interest in current affairs.</p>
+
+                <div class="space-y-4">
+                    <div class="flex items-start gap-5 p-5 rounded-2xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100">
+                        <div class="font-serif text-2xl text-zinc-300 w-8">01</div>
+                        <div>
+                            <div class="font-semibold text-zinc-900 text-base mb-1">Mental Alertness</div>
+                            <div class="text-sm text-zinc-500 font-light">Quick perception and awareness of context</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-5 p-5 rounded-2xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100">
+                        <div class="font-serif text-2xl text-zinc-300 w-8">02</div>
+                        <div>
+                            <div class="font-semibold text-zinc-900 text-base mb-1">Critical Powers of Assimilation</div>
+                            <div class="text-sm text-zinc-500 font-light">Ability to absorb and integrate new information</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-5 p-5 rounded-2xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100">
+                        <div class="font-serif text-2xl text-zinc-300 w-8">03</div>
+                        <div>
+                            <div class="font-semibold text-zinc-900 text-base mb-1">Clear & Logical Exposition</div>
+                            <div class="text-sm text-zinc-500 font-light">Precise, structured articulation of thought</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-5 p-5 rounded-2xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100">
+                        <div class="font-serif text-2xl text-zinc-300 w-8">04</div>
+                        <div>
+                            <div class="font-semibold text-zinc-900 text-base mb-1">Balance of Judgment</div>
+                            <div class="text-sm text-zinc-500 font-light">Weighing issues from multiple perspectives</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-5 p-5 rounded-2xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100">
+                        <div class="font-serif text-2xl text-zinc-300 w-8">05</div>
+                        <div>
+                            <div class="font-semibold text-zinc-900 text-base mb-1">Variety & Depth of Interest</div>
+                            <div class="text-sm text-zinc-500 font-light">Intellectual curiosity beyond academics</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-5 p-5 rounded-2xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100">
+                        <div class="font-serif text-2xl text-zinc-300 w-8">06</div>
+                        <div>
+                            <div class="font-semibold text-zinc-900 text-base mb-1">Social Cohesion & Leadership</div>
+                            <div class="text-sm text-zinc-500 font-light">Ability to unite and guide diverse groups</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-5 p-5 rounded-2xl bg-zinc-50 border border-zinc-200">
+                        <div class="font-serif text-2xl text-zinc-900 w-8">07</div>
+                        <div>
+                            <div class="font-semibold text-zinc-900 text-base mb-1">Intellectual & Moral Integrity</div>
+                            <div class="text-sm text-zinc-600 font-light leading-relaxed">The single most critical quality — honesty in thought, probity in action, and consistency between word and deed.</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
 </div>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="bg-[#1c1917] text-[#f5f1e8] py-12 mt-12">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-3 gap-8 mb-10">
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#c2410c] to-[#b45309] flex items-center justify-center">
-            <span class="font-display font-bold text-lg">U</span>
-          </div>
-          <div class="font-display font-bold text-lg">UPSC Syllabus</div>
+<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Back to top" type="button">↑</button>
+
+<footer class="bg-white border-t border-zinc-200 pt-20 pb-10 relative z-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+            <div class="md:col-span-5">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-8 h-8 rounded-full bg-zinc-900 text-white flex items-center justify-center font-serif text-lg">U</div>
+                    <div class="font-semibold tracking-tight text-zinc-900 text-lg">UPSC Syllabus</div>
+                </div>
+                <p class="text-sm text-zinc-500 font-light leading-relaxed max-w-sm">A beautifully structured, highly aesthetic visualization of the Civil Services Examination syllabus across all three rigorous stages.</p>
+            </div>
+            
+            <div class="md:col-span-3">
+                <div class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 mb-5">Navigation</div>
+                <ul class="space-y-3 text-sm font-light text-zinc-600">
+                    <li><button onclick="switchStage('prelims')" class="hover:text-zinc-900 transition-colors">Preliminary Examination</button></li>
+                    <li><button onclick="switchStage('mains')" class="hover:text-zinc-900 transition-colors">Main Examination</button></li>
+                    <li><button onclick="switchStage('pt')" class="hover:text-zinc-900 transition-colors">Personality Test</button></li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-4">
+                <div class="text-[10px] font-bold tracking-widest uppercase text-zinc-400 mb-5">Examination Summary</div>
+                <ul class="space-y-3 text-sm text-zinc-600 font-light">
+                    <li class="flex justify-between border-b border-zinc-100 pb-2"><span>Prelims Total</span> <span class="font-semibold text-zinc-900">400</span></li>
+                    <li class="flex justify-between border-b border-zinc-100 pb-2"><span>Mains Total</span> <span class="font-semibold text-zinc-900">1750</span></li>
+                    <li class="flex justify-between border-b border-zinc-100 pb-2"><span>Personality Test</span> <span class="font-semibold text-zinc-900">275</span></li>
+                    <li class="flex justify-between pt-2"><span class="font-bold text-zinc-900 uppercase tracking-widest text-[10px]">Final Merit Total</span> <span class="font-serif text-xl text-zinc-900">2025</span></li>
+                </ul>
+            </div>
         </div>
-        <p class="text-sm text-[#a8a29e] leading-relaxed">A complete, structured visualization of the Civil Services Examination syllabus across all three stages — Prelims, Mains, and Personality Test.</p>
-      </div>
-      <div>
-        <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#a8a29e] mb-4">Quick Navigation</div>
-        <ul class="space-y-2 text-sm">
-          <li><a href="file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html#" onclick="switchStage(&#39;prelims&#39;); return false;" class="hover:text-[#c2410c] transition">Preliminary Examination</a></li>
-          <li><a href="file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html#" onclick="switchStage(&#39;mains&#39;); return false;" class="hover:text-[#c2410c] transition">Main Examination</a></li>
-          <li><a href="file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html#" onclick="switchStage(&#39;mains&#39;); document.getElementById(&#39;mains-panel&#39;).scrollIntoView({behavior:&#39;smooth&#39;}); return false;" class="hover:text-[#c2410c] transition">Geography Optional</a></li>
-          <li><a href="file:///C:/Users/Dell/Documents/Codex/2026-07-22/referenced-chatgpt-conversation-this-is-untrusted/outputs/upscsyllabus_checked.html#" onclick="switchStage(&#39;pt&#39;); return false;" class="hover:text-[#c2410c] transition">Personality Test</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#a8a29e] mb-4">Examination Summary</div>
-        <ul class="space-y-2 text-sm text-[#d6d3d1]">
-          <li class="flex justify-between"><span>Prelims Total</span> <span class="font-display font-bold">400 marks</span></li>
-          <li class="flex justify-between"><span>Mains Total</span> <span class="font-display font-bold">1750 marks</span></li>
-          <li class="flex justify-between"><span>Personality Test</span> <span class="font-display font-bold">275 marks</span></li>
-          <li class="flex justify-between border-t border-[#44403c] pt-2 mt-2"><span>Grand Total</span> <span class="font-display font-bold text-[#c2410c]">2025 marks</span></li>
-        </ul>
-      </div>
+        
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-zinc-400 uppercase tracking-widest">
+            <p>Government strives to have a workforce which reflects gender balance.</p>
+            <p>Data Layer completely preserved.</p>
+        </div>
     </div>
-    <div class="pt-6 border-t border-[#44403c] flex flex-wrap justify-between gap-4 text-xs text-[#a8a29e]">
-      <div>Government strives to have a workforce which reflects gender balance and women candidates are encouraged to apply.</div>
-      <div>Visualization based on UPSC Civil Services Syllabus document.</div>
-    </div>
-  </div>
 </footer>
 
 <script>
-// Stage switching
-function switchStage(stage) {
-  // Update tabs
-  document.querySelectorAll('.stage-tab').forEach(t => t.classList.remove('active'));
-  document.getElementById('tab-' + stage).classList.add('active');
-  
-  // Update panels
-  document.querySelectorAll('.stage-panel').forEach(p => p.classList.remove('active'));
-  document.getElementById(stage + '-panel').classList.add('active');
-  
-  // Scroll to stages section
-  setTimeout(() => {
-    document.getElementById('stages').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 100);
-}
-
-// Scroll reveal
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+    function updateStickyOffsets() {
+        const nav = document.querySelector('nav');
+        const tabsContainer = document.getElementById('tabs-container');
+        const navHeight = nav ? Math.ceil(nav.getBoundingClientRect().height + 24) : 84;
+        const tabsHeight = tabsContainer ? Math.ceil(tabsContainer.getBoundingClientRect().height + 16) : 0;
+        const minimumOffset = window.innerWidth < 768 ? 220 : 140;
+        const offset = Math.max(navHeight + tabsHeight + (window.innerWidth < 768 ? 36 : 0), minimumOffset);
+        document.documentElement.style.setProperty('--sticky-offset', `${offset}px`);
     }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    // Tab Switching Logic
+    function switchStage(stage) {
+        // Update tab styling
+        document.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+        const activeTab = document.getElementById('tab-' + stage);
+        if(activeTab) activeTab.classList.add('active');
+        
+        // Update panel visibility
+        document.querySelectorAll('.stage-panel').forEach(p => {
+            p.classList.remove('active');
+        });
+        
+        const activePanel = document.getElementById(stage + '-panel');
+        if(activePanel) {
+            activePanel.classList.add('active');
+            updateStickyOffsets();
 
-// Pulse dot animation
-const style = document.createElement('style');
-style.textContent = `
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.4; transform: scale(1.5); }
-  }
-`;
-document.head.appendChild(style);
+            requestAnimationFrame(() => {
+                const stickyOffset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--sticky-offset')) || 0;
+                const targetPosition = activePanel.getBoundingClientRect().top + window.scrollY - stickyOffset - 12;
 
-// Initialize reveal on already-visible elements
-window.addEventListener('load', () => {
-  document.querySelectorAll('.reveal').forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight) {
-      el.classList.add('visible');
+                window.scrollTo({
+                    top: Math.max(targetPosition, 0),
+                    behavior: 'smooth'
+                });
+            });
+
+            // Re-trigger reveal animations for elements inside the new panel
+            setTimeout(() => {
+                activePanel.querySelectorAll('.reveal').forEach((el, index) => {
+                    // Stagger the animation slightly
+                    setTimeout(() => {
+                        const rect = el.getBoundingClientRect();
+                        if (rect.top < window.innerHeight + 100) {
+                            el.classList.add('visible');
+                        }
+                    }, index * 50);
+                });
+            }, 50);
+        }
     }
-  });
-});
+
+    window.addEventListener('load', updateStickyOffsets);
+    window.addEventListener('resize', updateStickyOffsets);
+    document.addEventListener('DOMContentLoaded', updateStickyOffsets);
+
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    const toggleScrollTopButton = () => {
+        if (!scrollTopBtn) return;
+        if (window.scrollY > 600) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    };
+
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', toggleScrollTopButton, { passive: true });
+    }
+
+    // Scroll Reveal Observer
+    const observerOptions = {
+        threshold: 0.05,
+        rootMargin: '0px 0px -20px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    // Initialize observer on DOM load
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        
+        // Ensure above-fold elements are immediately visible
+        setTimeout(() => {
+            document.querySelectorAll('.reveal').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    el.classList.add('visible');
+                }
+            });
+            toggleScrollTopButton();
+        }, 100);
+    });
 </script>
 
-
-
-</body></html>
+</body>
+</html>
